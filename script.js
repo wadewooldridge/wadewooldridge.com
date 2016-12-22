@@ -84,6 +84,11 @@ app.controller('projectsController', function(){
 });
 
 app.controller('experienceController', function(){
+    // Booleans to toggle experience details.
+    this.showCaviumDetails = false;
+    this.showAdaptecDetails = false;
+    this.showSiliconImageDetails = false;
+    this.showQLogicDetails = false;
 });
 
 app.controller('musicianController', function(){

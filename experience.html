@@ -4,94 +4,98 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-sm-offset-1">
         <p>Click on any job title for details.</p>
-        <h3>Cavium / QLogic Corporation / Broadcom (2010 - present)</h3>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" href="#cavium">Principal Systems Engineer</a>
-                </div>
-                <div id="cavium" class="panel-collapse collapse">
-                    <ul>
-                        <li>Provided Systems Engineering support as the main customer-facing factory engineer to IBM
-                            xSeries Server (later Lenovo) groups for NetXtreme Ethernet ASICs and networking adapters.</li>
-                        <li>Software Release Planning:  Owner of the Vendor Statement of Work (VSoW).  Negotiated software release
-                            content and delivery schedule with the customer.  Tracked deliverables and milestones.</li>
-                        <li>Software Release Execution:  Triaged and reproduced customer reported issues.  Collected and analyzed
-                            debug traces and core dumps.  Coordinated bug fixes and new feature functionality integration
-                            with Engineering and the Product Quality Assurance team.  Managed the weekly customer bug
-                            scrubs and program planning and review meetings.  Responsible for the rollout of customer software
-                            releases and point fixes.</li>
-                        <li>Created and maintained SharePoint document libraries and metadata for storing documentation
-                            to/from all customers. Evangelist of Wiki system and managed Wiki data migration and integration.</li>
-                    </ul>
-                </div>
-            </div>
+        <hr>
+        <h3>Cavium / QLogic Corporation / Broadcom</h3>
+        <div ng-click="ec.showCaviumDetails = !ec.showCaviumDetails">
+            <h4>
+                <button ng-if="ec.showCaviumDetails">&ndash;</button>
+                <button ng-if="!ec.showCaviumDetails">+</button>
+                Principal Systems Engineer (2010 - 2016)
+            </h4>
+        </div>
+        <div ng-show="ec.showCaviumDetails">
+            <ul>
+                <li>Provided Systems Engineering support as the main customer-facing factory engineer to IBM
+                    xSeries Server (later Lenovo) groups for NetXtreme Ethernet ASICs and networking adapters.</li>
+                <li>Software Release Planning:  Owner of the Vendor Statement of Work (VSoW).  Negotiated software release
+                    content and delivery schedule with the customer.  Tracked deliverables and milestones.</li>
+                <li>Software Release Execution:  Triaged and reproduced customer reported issues.  Collected and analyzed
+                    debug traces and core dumps.  Coordinated bug fixes and new feature functionality integration
+                    with Engineering and the Product Quality Assurance team.  Managed the weekly customer bug
+                    scrubs and program planning and review meetings.  Responsible for the rollout of customer software
+                    releases and point fixes.</li>
+                <li>Created and maintained SharePoint document libraries and metadata for storing documentation
+                    to/from all customers. Evangelist of Wiki system and managed Wiki data migration and integration.</li>
+            </ul>
         </div>
 
-        <h3>Adaptec, Inc. / Aristos Logic (2006 - 2010)</h3>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" href="#adaptec">Principal Firmware Engineer</a>
-                </div>
-                <div id="adaptec" class="panel-collapse collapse">
-                    <ul>
-                        <li>Designed, implemented, tested, and supported a variety of subsystems for UltraSlice and MPx RAID
-                            controller embedded firmware, running in a bound enterprise controller for IBM BladeCenter and
-                            single controller for Apple Mac Pro.</li>
-                        <li>Productized and augmented the SCSI-to-ATA translation layer, increasing maintainability and expanding
-                            supported command set.</li>
-                        <li>Implemented multiple versions of I2C interface to IBM Board Management Controller for expanded control
-                            functionality, including startup and shutdown, bound controller support, and vital product data.</li>
-                        <li>Designed and implemented interface to abstract multiple battery backup unit implementations to common
-                            monitoring thread, providing ease of use across multiple platforms.</li>
-                        <li>Created and populated engineering Wiki providing a needed repository of information for finding
-                            existing documentation, easing training of new employees, and transferring knowledge to other facilities.</li>
-                    </ul>
-                </div>
-            </div>
+        <hr>
+        <h3>Adaptec, Inc. / Aristos Logic</h3>
+        <div ng-click="ec.showAdaptecDetails = !ec.showAdaptecDetails">
+            <h4>
+                <button ng-if="ec.showAdaptecDetails">&ndash;</button>
+                <button ng-if="!ec.showAdaptecDetails">+</button>
+                Principal Firmware Engineer (2006 - 2010)
+            </h4>
+        </div>
+        <div ng-show="ec.showAdaptecDetails">
+            <ul>
+                <li>Designed, implemented, tested, and supported a variety of subsystems for UltraSlice and MPx RAID
+                    controller embedded firmware, running in a bound enterprise controller for IBM BladeCenter and
+                    single controller for Apple Mac Pro.</li>
+                <li>Productized and augmented the SCSI-to-ATA translation layer, increasing maintainability and expanding
+                    supported command set.</li>
+                <li>Implemented multiple versions of I2C interface to IBM Board Management Controller for expanded control
+                    functionality, including startup and shutdown, bound controller support, and vital product data.</li>
+                <li>Designed and implemented interface to abstract multiple battery backup unit implementations to common
+                    monitoring thread, providing ease of use across multiple platforms.</li>
+                <li>Created and populated engineering Wiki providing a needed repository of information for finding
+                    existing documentation, easing training of new employees, and transferring knowledge to other facilities.</li>
+            </ul>
         </div>
 
-        <h3>Silicon Image (2004 - 2006)</h3>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" href="#silicon-image">Senior Firmware Engineer</a>
-                </div>
-                <div id="silicon-image" class="panel-collapse collapse">
-                    <ul>
-                        <li>Maintained and developed multiple RAID implementations.  Provided customer support, tested and fixed
-                            bugs, and designed new functionality.  Provided key contact interface to manufacturing partner for
-                            Yukon redundant Fibre Channel-to-SATA disk subsystem.</li>
-                        <li>Analyzed and optimized SataRaid 5 Windows driver suite using VTune, and redesigned key algorithms to
-                            achieve 50% reduction in XOR logic CPU time for RAID-5 writes.</li>
-                        <li>Designed and developed ValSamba test program to validate design and implementation of new ASIC
-                            intellectual property created for contract manufacture by another company; product performed validation
-                            from low-level register access, to command-level testing, to a full-function performance exerciser
-                            with multiple I/Os to multiple channels with data verification.</li>
-                    </ul>
-                </div>
-            </div>
+        <hr>
+        <h3>Silicon Image</h3>
+        <div ng-click="ec.showSiliconImageDetails = !ec.showSiliconImageDetails">
+            <h4>
+                <button ng-if="ec.showSiliconImageDetails">&ndash;</button>
+                <button ng-if="!ec.showSiliconImageDetails">+</button>
+                Senior Firmware Engineer (2004 - 2006)
+            </h4>
+        </div>
+        <div ng-show="ec.showSiliconImageDetails">
+            <ul>
+                <li>Maintained and developed multiple RAID implementations.  Provided customer support, tested and fixed
+                    bugs, and designed new functionality.  Provided key contact interface to manufacturing partner for
+                    Yukon redundant Fibre Channel-to-SATA disk subsystem.</li>
+                <li>Analyzed and optimized SataRaid 5 Windows driver suite using VTune, and redesigned key algorithms to
+                    achieve 50% reduction in XOR logic CPU time for RAID-5 writes.</li>
+                <li>Designed and developed ValSamba test program to validate design and implementation of new ASIC
+                    intellectual property created for contract manufacture by another company; product performed validation
+                    from low-level register access, to command-level testing, to a full-function performance exerciser
+                    with multiple I/Os to multiple channels with data verification.</li>
+            </ul>
         </div>
 
-        <h3>QLogic Corporation (1998 - 2004)</h3>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" href="#qlogic">Senior Principal Software Engineer</a>
-                </div>
-                <div id="qlogic" class="panel-collapse collapse">
-                    <ul>
-                        <li>Created Windows device drivers for enterprise-level SAN solutions using Fibre Channel controllers.</li>
-                        <li>Personally designed, implemented, and supported QLdirect device driver for Windows NT, Windows 2000,
-                            and Windows.net which provided multipath device access with failover, and achieved up to a 90% reduction
-                            in CPU driver time per IO.</li>
-                        <li>Created “SPIFFI” specification to define platform-independent SCSI disk failover to insure
-                            interoperability with multiple drive manufacturers.</li>
-                        <li>Implemented redesigns of miniport drivers for code management, IO optimization, and maintainability.</li>
-                    </ul>
-                </div>
-            </div>
+        <hr>
+        <h3>QLogic Corporation</h3>
+        <div ng-click="ec.showQLogicDetails = !ec.showQLogicDetails">
+            <h4>
+                <button ng-if="ec.showQLogicDetails">&ndash;</button>
+                <button ng-if="!ec.showQLogicDetails">+</button>
+                Senior Principal Software Engineer (1998 - 2004)
+            </h4>
+        </div>
+        <div ng-show="ec.showQLogicDetails">
+            <ul>
+                <li>Created Windows device drivers for enterprise-level SAN solutions using Fibre Channel controllers.</li>
+                <li>Personally designed, implemented, and supported QLdirect device driver for Windows NT, Windows 2000,
+                    and Windows.net which provided multipath device access with failover, and achieved up to a 90% reduction
+                    in CPU driver time per IO.</li>
+                <li>Created “SPIFFI” specification to define platform-independent SCSI disk failover to insure
+                    interoperability with multiple drive manufacturers.</li>
+                <li>Implemented redesigns of miniport drivers for code management, IO optimization, and maintainability.</li>
+            </ul>
         </div>
     </div>
 </div>
