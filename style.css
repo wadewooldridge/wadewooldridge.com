@@ -51,6 +51,14 @@ body {
     border-radius: 10px;
 }
 
+/* Styling specific to the Projects page. */
+.project-img {
+    max-width: 100%;
+}
+
+.paragraph-head {
+}
+
 /* Styling specific to the Musician page. */
 .col-xs-12 .col-xs-12 {
     padding: 0;
