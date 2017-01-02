@@ -102,6 +102,11 @@ app.controller('actorController', function(){
 });
 
 app.controller('foodieController', function(){
+    // Booleans to toggle foodie category contents.
+    this.showSuperMealDetails = false;
+    this.showFineDiningDetails = false;
+    this.showCasualDiningDetails = false;
+    this.showOtherFoodFunDetails = false;
 });
 
 app.controller('contactController', function(){

@@ -1,5 +1,9 @@
 /* General styling used throughout the pages.
    Pad the body because of the fixed nav bar. */
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding-top: 50px;
     background-color: #e0e0e0;
@@ -69,6 +73,29 @@ body {
 .album-contents td {
     border: 1px solid black;
     padding: 0 0.2em;
+}
+
+/* Styling specific to the Actor page. */
+.role-div {
+
+}
+
+.role-img {
+    width: 100%;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.play-title {
+    font-style: italic;
+}
+
+/* Styling specific to the Foodie page. */
+.foodie-img {
+    width: 100%;
+    height: auto;
 }
 
 /* Bootstrap formatting overrides. */
