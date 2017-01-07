@@ -74,7 +74,6 @@ app.controller('headerController', function(){
 app.controller('welcomeController', function(){
     $('.fly-in').each(function(index, element) {
         setTimeout(function() {
-            console.log('Timeout');
             element.classList.remove('waiting');
         }, (index * 400) + 250);
     });

@@ -21,7 +21,7 @@ body {
     font-style: italic;
 }
 
-.accent-color {
+.accent-color, .whats-possible {
     color: #ff6922;
 }
 
@@ -136,16 +136,45 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Developer page. */
+#developer p, #developer li {
+    font-size: 150%;
+}
+
 #four-logos {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .developer-image {
-    max-width: 48%;
+    max-width: 40%;
+    margin-left: 5%;
     margin-top: 3vh;
 }
 
+/* Styling specific to the Projects page. */
+#projects h3 {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+#projects p, #projects > div > ul > li {
+    font-size: 150%;
+}
+
+.paragraph-head {
+    font-size: 125%;
+}
+
+.project-img {
+    max-width: 100%;
+}
+
 /* Styling specific to the Skills page. */
+#skills {
+    font-size: 125%;
+}
+
 #skills th, #skills td, #skills p {
     padding-left: 2em;
 }
@@ -157,20 +186,25 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Experience page. */
+#experience {
+    font-size: 125%;
+}
+
 .experience-image {
     max-width: 40%;
     margin-left: 5%;
 }
 
-/* Styling specific to the Projects page. */
-.project-img {
-    max-width: 100%;
-}
-
-.paragraph-head {
-}
-
 /* Styling specific to the Musician page. */
+#musician h3, #musician p, #musician blockquote {
+    font-size: 150%;
+}
+
+.album-title {
+    font-size: 150%;
+    font-style: italic;
+}
+
 .col-xs-12 .col-xs-12 {
     padding: 0;
 }
@@ -195,6 +229,10 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Actor page. */
+#actor h3, #actor p, #actor blockquote {
+    font-size: 150%;
+}
+
 .role-img {
     width: 100%;
 }
@@ -208,13 +246,21 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Foodie page. */
+#foodie h3, #foodie h4, #foodie p, #foodie blockquote {
+    font-size: 150%;
+}
+
+#foodie h4 {
+    font-weight: bold;
+}
+
 .foodie-img {
     width: 100%;
     height: auto;
 }
 
 /* Styling for Contact Me section. */
-#contact-me p {
+#contact-me p, #contact-me td {
     font-size: 150%;
 }
 
@@ -226,4 +272,8 @@ a:hover, a:active {
 #contact-table td {
     font-size: 125%;
     padding-left: 1em;
+}
+
+.contact-image {
+    max-width: 100%;
 }
