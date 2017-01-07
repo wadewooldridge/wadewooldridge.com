@@ -6,10 +6,11 @@
 
 body {
     padding-top: 50px;
-    background-color: #e0e0e0;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", sans-serif;
 }
 
 .page-title {
+    color: #aaa;
 }
 
 .strong {
@@ -20,13 +21,69 @@ body {
     font-style: italic;
 }
 
+.accent-color {
+    color: #ff6922;
+}
+
+/* Staggered list - achieved by skewing the ul by n degrees, and the li by -n degrees. */
+.staggered-list {
+    transform: skew(45deg);
+    margin-left: 10%;
+}
+
+.staggered-list > li {
+    transform: skew(-45deg);
+}
+
+/* Bootstrap overrides for color scheme. */
+.navbar-default, .navbar-collapse {
+    color: #aaa;
+    border-color: #aaa;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #aaa;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #aaa;
+}
+
+hr {
+    border-top: 1px solid #aaa;
+}
+
+blockquote {
+    border-color: #aaa;
+}
+
+/* Link styling. */
+a:link, a:visited {
+    color: black;
+}
+
+a:hover, a:active {
+    color: #ff6922;
+    text-decoration: none;
+}
+
 /* Menu bar formatting. */
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#brand-subtitle {
+    font-size: 69%;
+}
+
 .nav-divider-left-md {
-    border-left: 2px solid lightgray;
+    border-left: 1px solid #aaa;
 }
 
 .nav-divider-right-md {
-    border-right: 2px solid #e0e0e0;
+    border-right: 1px solid #aaa;
 }
 
 /* Menu bar overrides for mobile. */
@@ -40,16 +97,52 @@ body {
     }
 
     .nav-divider-bottom-xs {
-        border-bottom: 2px solid #e0e0e0;
+        border-bottom: 1px solid #aaa;
     }
 }
 
 /* Styling specific to the Welcome page. */
+#welcome-page {
+    overflow: hidden;
+}
+
+#welcome-page h3,
+#welcome-page p,
+#welcome-page > div > ul > li {
+    font-size: 250%;
+}
+
+#welcome-page ul > li > ul > li {
+    font-size: 75%;
+}
+
 #welcome-page img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
+
+.fly-in {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.fly-in-left.waiting {
+    transform: translateX(-105%);    /* Rounded up due to ul skew. */
+}
+
+.fly-in-bottom.waiting {
+    transform: translateY(100vh);
+}
+
+/* Styling specific to the Developer page. */
+
+/* Styling specific to the Skills page. */
+#skills th, #skills td, #skills p {
+    padding-left: 2em;
+}
+
+/* Styling specific to the Experience page. */
 
 /* Styling specific to the Projects page. */
 .project-img {
@@ -84,10 +177,6 @@ body {
 }
 
 /* Styling specific to the Actor page. */
-.role-div {
-
-}
-
 .role-img {
     width: 100%;
 }
@@ -104,59 +193,6 @@ body {
 .foodie-img {
     width: 100%;
     height: auto;
-}
-
-/* Bootstrap formatting overrides. */
-
-.carousel-inner > .item > figure > img {
-    height: 300px;
-    margin: auto;
-}
-
-/* Pad the sections and add bottom borders. */
-section {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    border-bottom: 2px solid darkgray;
-}
-
-/* Styling for About Me section. */
-#about_me p {
-    font-size: 125%;
-}
-
-/* Styling for Skills section. */
-#skills th, #skills td, #skills p {
-    padding-left: 2em;
-}
-
-/* Styling for Projects section. */
-#projects figure {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-/* Animation of buttons over project thumbnails. */
-#projects figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition-duration: 1s;
-    opacity: 0;
-    background-color: rgba(255,255,255,0.6);
-}
-
-#projects figure:hover figcaption {
-    opacity: 1;
-    transform: translateY(0%);
-    transition: 0.5s;
 }
 
 /* Styling for Contact Me section. */
