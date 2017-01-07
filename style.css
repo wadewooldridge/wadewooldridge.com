@@ -136,13 +136,31 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Developer page. */
+#four-logos {
+    max-width: 100%;
+}
+
+.developer-image {
+    max-width: 48%;
+    margin-top: 3vh;
+}
 
 /* Styling specific to the Skills page. */
 #skills th, #skills td, #skills p {
     padding-left: 2em;
 }
 
+.skills-image {
+    max-width: 40%;
+    margin-left: 5%;
+    margin-bottom: 3vh;
+}
+
 /* Styling specific to the Experience page. */
+.experience-image {
+    max-width: 40%;
+    margin-left: 5%;
+}
 
 /* Styling specific to the Projects page. */
 .project-img {
@@ -196,9 +214,13 @@ a:hover, a:active {
 }
 
 /* Styling for Contact Me section. */
+#contact-me p {
+    font-size: 150%;
+}
+
 #contact-table img {
     height: 30px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 #contact-table td {
