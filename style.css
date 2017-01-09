@@ -68,6 +68,10 @@ a:hover, a:active {
     text-decoration: none;
 }
 
+.expand-collapse {
+    height: 1.5em;
+}
+
 /* Menu bar formatting. */
 .navbar-brand {
     padding-top: 5px;
@@ -160,6 +164,19 @@ a:hover, a:active {
 
 #projects p, #projects > div > ul > li {
     font-size: 150%;
+}
+
+#projects .btn-default {
+    border-color: #ff6922;
+    font-size: 125%;
+    width: 20%;
+    max-width: 100px;
+}
+
+#projects a:hover, a:active {
+    color: white;
+    background-color: #ff6922;
+    text-decoration: none;
 }
 
 .paragraph-head {
@@ -276,4 +293,11 @@ a:hover, a:active {
 
 .contact-image {
     max-width: 100%;
+}
+
+/* Other overrides for mobile. */
+@media screen and (max-width: 767px) {
+    #skills th, #skills td, #skills p {
+        padding-left: 1em;
+    }
 }
