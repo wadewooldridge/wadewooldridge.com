@@ -59,6 +59,10 @@ blockquote {
 }
 
 /* Link styling. */
+ul {
+    color: #ff6922;
+}
+
 a:link, a:visited {
     color: black;
 }
@@ -69,7 +73,11 @@ a:hover, a:active {
 }
 
 .expand-collapse {
-    height: 1.25em;
+    height: 1em;
+}
+
+ul {
+    color: #ff6922;
 }
 
 /* Menu bar formatting. */
