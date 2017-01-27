@@ -10,7 +10,7 @@ body {
 }
 
 .page-title {
-    color: #aaa;
+    color: #07889b;
 }
 
 .strong {
@@ -37,13 +37,18 @@ body {
 
 /* Bootstrap overrides for color scheme. */
 .navbar-default, .navbar-collapse {
-    color: #aaa;
+    color: #07889b;
     border-color: #aaa;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-    color: #aaa;
+    color: #07889b;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active {
+    color: #ff6922;
 }
 
 .navbar-default .navbar-toggle {
@@ -51,11 +56,11 @@ body {
 }
 
 hr {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #07889b;
 }
 
 blockquote {
-    border-color: #aaa;
+    border-color: #07889b;
 }
 
 /* Link styling. */
