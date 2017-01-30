@@ -41,11 +41,16 @@ body {
     border-color: #aaa;
 }
 
+#brand-link,
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: #07889b;
 }
 
+#brand-link:hover,
+#brand-link:active,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:active {
     color: #ff6922;
@@ -85,6 +90,10 @@ a:hover, a:active {
 
 #brand-subtitle {
     font-size: 69%;
+}
+
+.navbar-nav {
+    font-size: 125%;
 }
 
 .nav-divider-left-md {

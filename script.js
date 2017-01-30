@@ -75,7 +75,7 @@ app.controller('welcomeController', function(){
     $('.fly-in').each(function(index, element) {
         setTimeout(function() {
             element.classList.remove('waiting');
-        }, (index * 400) + 250);
+        }, (index * 250) + 200);
     });
 });
 
@@ -115,4 +115,13 @@ app.controller('foodieController', function(){
 });
 
 app.controller('contactController', function(){
+});
+
+/* Bootstrap navbar highlighting. */
+$(document).ready(function() {
+    console.log('Document ready');
+    $(".nav a").on('click', function() {
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });
 });
