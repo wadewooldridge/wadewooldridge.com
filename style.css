@@ -184,6 +184,10 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+#projects h3.align-right {
+    text-align: right;
+}
+
 #projects p, #projects > div > ul > li {
     font-size: 150%;
 }
@@ -193,6 +197,11 @@ a:hover, a:active {
     font-size: 125%;
     width: 20%;
     max-width: 100px;
+}
+
+#projects .btn-default.scroll-top {
+    border-color: black;
+    color: black;
 }
 
 #projects a:hover, a:active {

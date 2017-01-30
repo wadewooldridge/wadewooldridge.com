@@ -86,6 +86,9 @@ app.controller('skillsController', function(){
 });
 
 app.controller('projectsController', function(){
+    $('.scroll-top').click(function() {
+        $('body').animate({ scrollTop: 0}, 250);
+    });
 });
 
 app.controller('experienceController', function(){
