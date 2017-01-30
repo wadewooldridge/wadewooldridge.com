@@ -10,7 +10,9 @@
     <div class="col-xs-12 col-sm-4 album-cover">
         <h4><span class="accent-color album-title">Imitate the Sun</span>&nbsp;&nbsp;(2003)</h4>
         <p>A collection of inspiration music including six originals and six covers.</p>
-        <img src="albums/ImitateTheSun/cdfrontcover.jpg" ng-click="mc.showImitateTheSun = !mc.showImitateTheSun">
+        <img src="albums/ImitateTheSun/cdfrontcover.jpg"
+             ng-click="mc.showImitateTheSun = !mc.showImitateTheSun"
+             ng-class="{expandable: !mc.showImitateTheSun, collapsible: mc.showImitateTheSun}">
         <div class="col-xs-12 album-contents" ng-show="mc.showImitateTheSun">
             <br>
             <table>
@@ -272,7 +274,9 @@
     <div class="col-xs-12 col-sm-4 album-cover">
         <h4><span class="accent-color album-title">Bits Of Me</span>&nbsp;&nbsp;(2016)</h4>
         <p>A collection of ten songs that are personal to me, including five originals.</p>
-        <img src="albums/BitsOfMe/BitsOfMe.jpg" ng-click="mc.showBitsOfMe = !mc.showBitsOfMe">
+        <img src="albums/BitsOfMe/BitsOfMe.jpg"
+             ng-click="mc.showBitsOfMe = !mc.showBitsOfMe"
+             ng-class="{expandable: !mc.showBitsOfMe, collapsible: mc.showBitsOfMe}">
         <div class="col-xs-12 album-contents" ng-show="mc.showBitsOfMe">
             <br>
             <table>
@@ -503,7 +507,9 @@
     <div class="col-xs-12 col-sm-4 album-cover">
         <h4><span class="accent-color album-title">Dreamscape</span>&nbsp;&nbsp;(2016)</h4>
         <p>Twelve Broadway favorites, from shows that I have done or at least wish I had.</p>
-        <img src="albums/Dreamscape/Dreamscape.jpg" ng-click="mc.showDreamscape = !mc.showDreamscape">
+        <img src="albums/Dreamscape/Dreamscape.jpg"
+             ng-click="mc.showDreamscape = !mc.showDreamscape"
+             ng-class="{expandable: !mc.showDreamscape, collapsible: mc.showDreamscape}">
         <div class="col-xs-12 album-contents" ng-show="mc.showDreamscape">
             <br>
             <table>

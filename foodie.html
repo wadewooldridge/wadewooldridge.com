@@ -7,7 +7,9 @@
         <hr>
     </div>
 
-    <div class="col-xs-12 col-sm-6 foodie-category" ng-click="fc.showSuperMealDetails = !fc.showSuperMealDetails">
+    <div class="col-xs-12 col-sm-6 foodie-category"
+         ng-click="fc.showSuperMealDetails = !fc.showSuperMealDetails"
+         ng-class="{expandable: !fc.showSuperMealDetails, collapsible: fc.showSuperMealDetails}">
         <h3>
             <img ng-if="fc.showSuperMealDetails" src="images/collapse.png" class="expand-collapse">
             <img ng-if="!fc.showSuperMealDetails" src="images/expand.png" class="expand-collapse">
@@ -49,7 +51,9 @@
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 foodie-category" ng-click="fc.showFineDiningDetails = !fc.showFineDiningDetails">
+    <div class="col-xs-12 col-sm-6 foodie-category"
+         ng-click="fc.showFineDiningDetails = !fc.showFineDiningDetails"
+         ng-class="{expandable: !fc.showFineDiningDetails, collapsible: fc.showFineDiningDetails}">
         <h3>
             <img ng-if="fc.showFineDiningDetails" src="images/collapse.png" class="expand-collapse">
             <img ng-if="!fc.showFineDiningDetails" src="images/expand.png" class="expand-collapse">
@@ -80,7 +84,9 @@
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 foodie-category" ng-click="fc.showCasualDiningDetails = !fc.showCasualDiningDetails">
+    <div class="col-xs-12 col-sm-6 foodie-category"
+         ng-click="fc.showCasualDiningDetails = !fc.showCasualDiningDetails"
+         ng-class="{expandable: !fc.showCasualDiningDetails, collapsible: fc.showCasualDiningDetails}">
         <h3>
             <img ng-if="fc.showCasualDiningDetails" src="images/collapse.png" class="expand-collapse">
             <img ng-if="!fc.showCasualDiningDetails" src="images/expand.png" class="expand-collapse">
@@ -113,7 +119,9 @@
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 foodie-category" ng-click="fc.showOtherFoodFunDetails = !fc.showOtherFoodFunDetails">
+    <div class="col-xs-12 col-sm-6 foodie-category"
+         ng-click="fc.showOtherFoodFunDetails = !fc.showOtherFoodFunDetails"
+         ng-class="{expandable: !fc.showOtherFoodFunDetails, collapsible: fc.showOtherFoodFunDetails}">
         <h3>
             <img ng-if="fc.showOtherFoodFunDetails" src="images/collapse.png" class="expand-collapse">
             <img ng-if="!fc.showOtherFoodFunDetails" src="images/expand.png" class="expand-collapse">

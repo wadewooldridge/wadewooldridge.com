@@ -82,6 +82,14 @@ a:hover, a:active {
     height: 1em;
 }
 
+.expandable {
+    cursor: zoom-in;
+}
+
+.collapsible {
+    cursor: zoom-out;
+}
+
 /* Menu bar formatting. */
 .navbar-brand {
     padding-top: 5px;
