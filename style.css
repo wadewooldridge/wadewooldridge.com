@@ -234,10 +234,6 @@ a:hover, a:active {
 }
 
 /* Styling specific to the Experience page. */
-#experience {
-    font-size: 125%;
-}
-
 .experience-image {
     max-width: 40%;
     margin-left: 5%;
@@ -328,7 +324,46 @@ a:hover, a:active {
 
 /* Other overrides for mobile. */
 @media screen and (max-width: 767px) {
+    #welcome-page h3,
+    #welcome-page p,
+    #welcome-page > div > ul > li {
+        font-size: 200%;
+    }
+
+    #welcome-page ul > li > ul > li {
+        font-size: 75%;
+    }
+
+    #welcome-page br {
+        display: none;
+    }
+
+    #welcome-page img {
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+        border-radius: 10px;
+    }
+
+    /* Keep the ul skew from widening the page in mobile. */
+    #developer ul.staggered-list {
+        width: 70%;
+    }
+
+    .developer-image {
+        margin-left: 0;
+    }
+
     #skills th, #skills td, #skills p {
         padding-left: 1em;
     }
+
+    #experience h3 {
+        font-size: 125%;
+    }
+
+    #experience h4 {
+        font-size: 100%;
+    }
+
 }
