@@ -123,8 +123,15 @@ app.controller('contactController', function(){
 /* Bootstrap navbar highlighting. */
 $(document).ready(function() {
     console.log('Document ready');
-    $(".nav a").on('click', function() {
-        $(".nav").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
+    // Add handler to make sure currently-selected page is indicated.
+    $('.nav a').on('click', function() {
+        $('.nav').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
+    // Add handled to auto-collapse hamburger menu in mobile mode.
+    $('.navbar-nav li a').click(function(event) {
+        if (!$(this).parent().hasClass('dropdown'))
+            $('.navbar-collapse').collapse('hide');
     });
 });
