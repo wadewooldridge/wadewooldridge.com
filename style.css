@@ -25,6 +25,10 @@ body {
     color: #ff6922;
 }
 
+.col-xs-12 .col-xs-12 {
+    padding: 0;
+}
+
 /* Staggered list - achieved by skewing the ul by n degrees, and the li by -n degrees. */
 .staggered-list {
     transform: skew(45deg);
@@ -167,7 +171,8 @@ a:hover, a:active {
 }
 
 #four-logos {
-    max-width: 80%;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .developer-image {
@@ -195,7 +200,7 @@ a:hover, a:active {
 #projects .btn-default {
     border-color: #ff6922;
     font-size: 125%;
-    width: 20%;
+    width: 30%;
     max-width: 100px;
 }
 
@@ -249,8 +254,13 @@ a:hover, a:active {
     font-style: italic;
 }
 
-.col-xs-12 .col-xs-12 {
-    padding: 0;
+.album-cover > p {
+    height: 5em;
+}
+
+.album-cover div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
 }
 
 .album-cover img {
@@ -350,7 +360,7 @@ a:hover, a:active {
         width: 70%;
     }
 
-    .developer-image {
+    .developer-image, #four-logos {
         margin-left: 0;
     }
 
