@@ -12,7 +12,7 @@
         <p>A collection of inspiration music including six originals and six covers.</p>
         <div>
             <img src="albums/ImitateTheSun/cdfrontcover.jpg"
-                 ng-click="mc.showImitateTheSun = !mc.showImitateTheSun"
+                 ng-click="mc.clickAlbum(1)"
                  ng-class="{expandable: !mc.showImitateTheSun, collapsible: mc.showImitateTheSun}">
         </div>
         <div class="col-xs-12 album-contents" ng-show="mc.showImitateTheSun">
@@ -24,19 +24,16 @@
                     </td>
                     <td>Imitate The Sun</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsimitatethesun.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/imitatethesun.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/imitatethesun.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Leslie Bricusse &amp; Allen Jay Friedman</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsimitatethesun.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/imitatethesun.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -45,19 +42,16 @@
                     </td>
                     <td>You, Me &amp; Spirit</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsyoumeandspirit.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/youmeandspirit.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/youmeandspirit.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsyoumeandspirit.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/youmeandspirit.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -66,19 +60,16 @@
                     </td>
                     <td>Our Thoughts Are Prayers</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsourthoughtsareprayers.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/ourthoughtsareprayers.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/ourthoughtsareprayers.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Lucille K. Olson</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsourthoughtsareprayers.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/ourthoughtsareprayers.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -87,19 +78,16 @@
                     </td>
                     <td>True Romance</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricstrueromance.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/trueromance.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/trueromance.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricstrueromance.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/trueromance.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -108,19 +96,16 @@
                     </td>
                     <td>My Little Space</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsmylittlespace.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/mylittlespace.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/mylittlespace.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsmylittlespace.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/mylittlespace.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -129,19 +114,16 @@
                     </td>
                     <td>Welcome To My Morning</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricswelcometomymorning.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/welcometomymorning.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/welcometomymorning.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>John Denver</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricswelcometomymorning.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/welcometomymorning.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,19 +132,16 @@
                     </td>
                     <td>Pure Imagination</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricspureimagination.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/pureimagination.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/pureimagination.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Leslie Bricusse &amp; Anthony Newley</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricspureimagination.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/pureimagination.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -171,19 +150,16 @@
                     </td>
                     <td>Out Of Nothing</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsoutofnothing.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/outofnothing.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/outofnothing.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Kimberly &amp; Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsoutofnothing.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/outofnothing.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -192,19 +168,16 @@
                     </td>
                     <td>Thank You For Sharing</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsthankyouforsharing.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/thankyouforsharing.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/thankyouforsharing.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Dale Gonyea &amp; Nikki Byers</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsthankyouforsharing.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/thankyouforsharing.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -213,19 +186,16 @@
                     </td>
                     <td>Woman-Child</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricswomanchild.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/womanchild.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/womanchild.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricswomanchild.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/womanchild.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -234,19 +204,16 @@
                     </td>
                     <td>Stand Upon My Shoulders</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricsstanduponmyshoulders.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/standuponmyshoulders.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/standuponmyshoulders.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Wade R. Wooldridge</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricsstanduponmyshoulders.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/standuponmyshoulders.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -255,19 +222,16 @@
                     </td>
                     <td>Heal Me</td>
                     <td>
-                        <div><a href="albums/ImitateTheSun/lyricshealme.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/healme.mp3" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/ImitateTheSun/healme.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td>Kevin Stokes &amp; Connie Harrington</td>
                     <td>
                         <div><a href="albums/ImitateTheSun/lyricshealme.html" target="_blank">Lyrics</a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/ImitateTheSun/healme.mp3" target="_blank">Sample</a></div>
                     </td>
                 </tr>
             </table>
@@ -278,7 +242,7 @@
         <p>A collection of ten songs that are personal to me, including five originals.</p>
         <div>
             <img src="albums/BitsOfMe/BitsOfMe.jpg"
-                 ng-click="mc.showBitsOfMe = !mc.showBitsOfMe"
+                 ng-click="mc.clickAlbum(2)"
                  ng-class="{expandable: !mc.showBitsOfMe, collapsible: mc.showBitsOfMe}">
         </div>
         <div class="col-xs-12 album-contents" ng-show="mc.showBitsOfMe">
@@ -288,19 +252,19 @@
                     <td rowspan="3">
                         <div>1</div>
                     </td>
-                    <td colspan="2">Farewell, Andromeda (Welcome to My Morning) </td>
+                    <td>Farewell, Andromeda (Welcome to My Morning) </td>
                     <td>
-                        <div><a href="albums/BitsOfMe/01%20Track%2001.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/01%20Track%2001.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">John Denver</td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/01%20Track%2001.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">The first song that Wade sang when starting to tour churches.</td>
+                    <td colspan="2">The first song that Wade sang when starting to tour churches.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
@@ -308,10 +272,10 @@
                     </td>
                     <td>I Set You Free</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/lyricsisetyoufree.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/02%20Track%2002.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/02%20Track%2002.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
@@ -319,28 +283,25 @@
                     <td>
                         <div><a href="albums/BitsOfMe/lyricsisetyoufree.html" target="_blank">Lyrics</a></div>
                     </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/02%20Track%2002.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">For Wade's sons as they reached their adolescent crises.
+                    <td colspan="2">For Wade's sons as they reached their adolescent crises.
                     </td>
                 </tr>
                 <tr>
                     <td rowspan="3">
                         <div>3</div>
                     </td>
-                    <td colspan="2">Change Your Mind</td>
+                    <td>Change Your Mind</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/03%20Track%2003.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/03%20Track%2003.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">Sister Hazel</td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/03%20Track%2003.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
                     <td colspan="3">From the &quot;Mothers of Intention&quot; song list.</td>
@@ -351,10 +312,10 @@
                     </td>
                     <td>I Like Our Way Better</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/lyricsilikeourwaybetter.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/04%20Track%2004.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/04%20Track%2004.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
@@ -362,12 +323,9 @@
                     <td>
                         <div><a href="albums/BitsOfMe/lyricsilikeourwaybetter.html" target="_blank">Lyrics</a></div>
                     </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/04%20Track%2004.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">For Kimberly's birthday, celebrating all the wonderful things we share.</td>
+                    <td colspan="2">For Kimberly's birthday, celebrating all the wonderful things we share.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
@@ -375,10 +333,10 @@
                     </td>
                     <td>In Another World</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/lyricsinanotherworld.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/05%20Track%2005.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/05%20Track%2005.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
@@ -386,12 +344,9 @@
                     <td>
                         <div><a href="albums/BitsOfMe/lyricsinanotherworld.html" target="_blank">Lyrics</a></div>
                     </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/05%20Track%2005.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">For Wade's son Mark after his suicide.</td>
+                    <td colspan="2">For Wade's son Mark after his suicide.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
@@ -399,10 +354,10 @@
                     </td>
                     <td>Hanyo Blues</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/lyricshanyoblues.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/06%20Track%2006.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/06%20Track%2006.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
@@ -410,67 +365,64 @@
                     <td>
                         <div><a href="albums/BitsOfMe/lyricshanyoblues.html" target="_blank">Lyrics</a></div>
                     </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/06%20Track%2006.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">For Han's birthday, celebrating all his greatness.</td>
+                    <td colspan="2">For Han's birthday, celebrating all his greatness.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
                         <div>7</div>
                     </td>
-                    <td colspan="2">Gethsemane</td>
+                    <td>Gethsemane</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/07%20Track%2007.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/07%20Track%2007.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">Andrew Lloyd Webber, from &quot;Jesus Christ, Superstar&quot;</td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/07%20Track%2007.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">From the CSLCV Palm Sunday productions of &quot;Superstar&quot;.<br>
+                    <td colspan="2">From the CSLCV Palm Sunday productions of &quot;Superstar&quot;.<br>
                     </td>
                 </tr>
                 <tr>
                     <td rowspan="3">
                         <div>8</div>
                     </td>
-                    <td colspan="2">Hallelujah</td>
+                    <td>Hallelujah</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/08%20Track%2008.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/08%20Track%2008.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">Leonard Cohen</td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/08%20Track%2008.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">First sung with Wade's son Mark, done here with Kimberly and Allendale.</td>
+                    <td colspan="2">First sung with Wade's son Mark, done here with Kimberly and Allendale.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
                         <div>9</div>
                     </td>
-                    <td colspan="2">Only Time</td>
+                    <td>Only Time</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/09%20Track%2009.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/09%20Track%2009.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">Enya</td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/09%20Track%2009.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">Because no album is complete without a duet with Kimberly.</td>
+                    <td colspan="2">Because no album is complete without a duet with Kimberly.</td>
                 </tr>
                 <tr>
                     <td rowspan="3">
@@ -478,10 +430,10 @@
                     </td>
                     <td>Sagittarius</td>
                     <td>
-                        <div><a href="albums/BitsOfMe/lyricssagittarius.html" target="_blank"><img src="images/lyricsicon.png"></a></div>
-                    </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/10%20Track%2010.m4a" target="_blank"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/BitsOfMe/10%20Track%2010.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
@@ -489,12 +441,9 @@
                     <td>
                         <div><a href="albums/BitsOfMe/lyricssagittarius.html" target="_blank">Lyrics</a></div>
                     </td>
-                    <td>
-                        <div><a href="albums/BitsOfMe/10%20Track%2010.m4a" target="_blank">Sample</a></div>
-                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3">A song Wade wrote while traveling in Sicily.</td>
+                    <td colspan="2">A song Wade wrote while traveling in Sicily.</td>
                 </tr>
             </table>
             <br>
@@ -513,7 +462,7 @@
         <p>Twelve Broadway favorites, from shows that I have done or at least wish I had.</p>
         <div>
             <img src="albums/Dreamscape/Dreamscape.jpg"
-                 ng-click="mc.showDreamscape = !mc.showDreamscape"
+                 ng-click="mc.clickAlbum(3)"
                  ng-class="{expandable: !mc.showDreamscape, collapsible: mc.showDreamscape}">
         </div>
         <div class="col-xs-12 album-contents" ng-show="mc.showDreamscape">
@@ -525,15 +474,14 @@
                     </td>
                     <td>Dreamscape</td>
                     <td>
-                        <div><a href="albums/Dreamscape/01%20Track%2001.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/01%20Track%2001.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Stephen Schwartz, from &quot;Reluctant
-                        Pilgrim&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/01%20Track%2001.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Stephen Schwartz, from &quot;Reluctant Pilgrim&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -541,14 +489,14 @@
                     </td>
                     <td>Anthem</td>
                     <td>
-                        <div><a href="albums/Dreamscape/02%20Track%2002.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/02%20Track%2002.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>ABBA, from &quot;Chess&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/02%20Track%2002.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">ABBA, from &quot;Chess&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -556,15 +504,14 @@
                     </td>
                     <td>I Am I, Don Quixote</td>
                     <td>
-                        <div><a href="albums/Dreamscape/03%20Track%2003.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/03%20Track%2003.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Wasserman / Darion / Leigh, from &quot;Man
-                        of La Mancha&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/03%20Track%2003.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Wasserman / Darion / Leigh, from &quot;Man of La Mancha&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -572,15 +519,14 @@
                     </td>
                     <td>Chanson</td>
                     <td>
-                        <div><a href="albums/Dreamscape/04%20Track%2004.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/04%20Track%2004.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Stephen Schwartz, from &quot;The Baker's
-                        Wife&quot; </td>
-                    <td>
-                        <div><a href="albums/Dreamscape/04%20Track%2004.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Stephen Schwartz, from &quot;The Baker's Wife&quot; </td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -588,31 +534,29 @@
                     </td>
                     <td>Married</td>
                     <td>
-                        <div><a href="albums/Dreamscape/05%20Track%2005.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/05%20Track%2005.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Kander &amp; Ebb, from &quot;Cabaret&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/05%20Track%2005.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Kander &amp; Ebb, from &quot;Cabaret&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
                         <div>6</div>
                     </td>
-                    <td>Shouldn't I Be Less In Love With
-                        You?</td>
+                    <td>Shouldn't I Be Less In Love With You?</td>
                     <td>
-                        <div><a href="albums/Dreamscape/06%20Track%2006.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/06%20Track%2006.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Joe DiPietro, from &quot;I Love You,
-                        You're Perfect, Now Change&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/06%20Track%2006.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Joe DiPietro, from &quot;I Love You, You're Perfect, Now Change&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -620,15 +564,14 @@
                     </td>
                     <td>Agony</td>
                     <td>
-                        <div><a href="albums/Dreamscape/07%20Track%2007.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/07%20Track%2007.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Stephen Sondheim, from &quot;Into the
-                        Woods&quot; </td>
-                    <td>
-                        <div><a href="albums/Dreamscape/07%20Track%2007.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Stephen Sondheim, from &quot;Into the Woods&quot; </td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -636,14 +579,14 @@
                     </td>
                     <td>The Mason</td>
                     <td>
-                        <div><a href="albums/Dreamscape/08%20Track%2008.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/08%20Track%2008.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Craig Carnelia, from &quot;Working&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/08%20Track%2008.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Craig Carnelia, from &quot;Working&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -651,15 +594,14 @@
                     </td>
                     <td>It's Not Where You Start</td>
                     <td>
-                        <div><a href="albums/Dreamscape/09%20Track%2009.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/09%20Track%2009.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Cy Coleman &amp; Dorothy Fields, from
-                        &quot;Seesaw&quot; </td>
-                    <td>
-                        <div><a href="albums/Dreamscape/09%20Track%2009.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Cy Coleman &amp; Dorothy Fields, from &quot;Seesaw&quot; </td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -667,15 +609,14 @@
                     </td>
                     <td>Bring Him Home</td>
                     <td>
-                        <div><a href="albums/Dreamscape/10%20Track%2010.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/10%20Track%2010.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Claude-Michel Schoenberg, from &quot;Les
-                        Miserables&quot; </td>
-                    <td>
-                        <div><a href="albums/Dreamscape/10%20Track%2010.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Claude-Michel Schoenberg, from &quot;Les Miserables&quot; </td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -683,14 +624,14 @@
                     </td>
                     <td>Where is the Life That Late I Led?</td>
                     <td>
-                        <div><a href="albums/Dreamscape/11%20Track%2011.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/11%20Track%2011.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Cole Port, from &quot;Kiss Me, Kate&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/11%20Track%2011.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Cole Port, from &quot;Kiss Me, Kate&quot;</td>
                 </tr>
                 <tr>
                     <td rowspan="2">
@@ -698,14 +639,14 @@
                     </td>
                     <td>Being Alive</td>
                     <td>
-                        <div><a href="albums/Dreamscape/12%20Track%2012.m4a"><img src="images/musicicon.png"></a></div>
+                        <audio controls>
+                            <source src="albums/Dreamscape/12%20Track%2012.m4a" type="audio/mp4">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </td>
                 </tr>
                 <tr>
-                    <td>Stephen Sondheim, from &quot;Company&quot;</td>
-                    <td>
-                        <div><a href="albums/Dreamscape/12%20Track%2012.m4a">Sample</a></div>
-                    </td>
+                    <td colspan="2">Stephen Sondheim, from &quot;Company&quot;</td>
                 </tr>
             </table>
             <br>

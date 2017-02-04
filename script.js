@@ -104,6 +104,34 @@ app.controller('musicianController', function(){
     this.showImitateTheSun = false;
     this.showBitsOfMe = false;
     this.showDreamscape = false;
+    
+    // The song lists with audio tags run wide, and I like them wide,
+    // so close the song lists for the other albums when we open one,
+    // to keep them from possibly overlapping on some screen sizes.
+    this.clickAlbum = function(index) {
+        switch (index) {
+            case 1:
+                this.showImitateTheSun = !this.showImitateTheSun;
+                if (this.showImitateTheSun) {
+                    this.showBitsOfMe = this.showDreamscape = false;
+                }
+                break;
+                
+            case 2:
+                this.showBitsOfMe = !this.showBitsOfMe;
+                if (this.showBitsOfMe) {
+                    this.showImitateTheSun = this.showDreamscape = false;
+                }
+                break;
+                
+            case 3:
+                this.showDreamscape = !this.showDreamscape;
+                if (this.showDreamscape) {
+                    this.showBitsOfMe = this.showImitateTheSun = false;
+                }
+                break;
+        }
+    };
 });
 
 app.controller('actorController', function(){
