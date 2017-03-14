@@ -1,0 +1,509 @@
+/*******************************
+**      Table of Contents:
+**      0. General styling.
+**      1. Page top / intro.
+**      2. Profile section.
+**      3. Skills section.
+**      4. Projects section.
+**      5. Musician section.
+**      6. Actor section.
+**      7. Foodie section.
+**      8. Contact section.
+**      9. Media queries.
+*******************************/
+
+/* Note that much of the styling comes from the 'grayscale' Bootstrap theme. */
+
+/*******************************
+**      0. General styling.
+*******************************/
+
+* {
+    box-sizing: border-box;
+}
+
+.general-text {
+    background-color: white;
+    color: black;
+}
+
+/* Undo some of the 'grayscale' Bootstrap theme. */
+h1, h2, h3, h4, h5, h6 {
+    margin: inherit;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-top: 1px solid #07889b;
+}
+
+/* Some more general styling. */
+.strong {
+    font-weight: bold;
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.accent-color, .whats-possible {
+    color: #ff6922;
+}
+
+
+/*******************************
+**      1. Page top / intro.
+*******************************/
+
+#brain-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+h1 {
+    margin: inherit;
+    margin-top: 20px;
+}
+
+#intro-text {
+    text-align: right;
+}
+
+#headshot-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*******************************
+**      2. Profile section.
+*******************************/
+
+/*******************************
+**      3. Skills section.
+*******************************/
+
+#skills-graphics {
+    background-image: url("../images/background_code.png");
+
+}
+/*******************************
+**      4. Projects section.
+*******************************/
+
+.project-text {
+    background-color: white;
+    color: black;
+}
+/*******************************
+**      5. Musician section.
+*******************************/
+
+/*******************************
+**      6. Actor section.
+*******************************/
+
+/*******************************
+**      7. Foodie section.
+*******************************/
+
+/*******************************
+**      8. Contact section.
+*******************************/
+
+/*******************************
+**      9. Media queries.
+*******************************/
+
+@media screen and (max-width: 767px) {
+    #brain-image {
+        margin-top: 0;
+    }
+}
+
+
+/*body {*/
+    /*padding-top: 50px;*/
+    /*font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", sans-serif;*/
+/*}*/
+
+/*.page-title {*/
+    /*color: #07889b;*/
+/*}*/
+
+/*.strong {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.italicize {*/
+    /*font-style: italic;*/
+/*}*/
+
+/*.accent-color, .whats-possible {*/
+    /*color: #ff6922;*/
+/*}*/
+
+/*.col-xs-12 .col-xs-12 {*/
+    /*padding: 0;*/
+/*}*/
+
+/*!* Staggered list - achieved by skewing the ul by n degrees, and the li by -n degrees. *!*/
+/*.staggered-list {*/
+    /*transform: skew(45deg);*/
+    /*margin-left: 10%;*/
+/*}*/
+
+/*.staggered-list > li {*/
+    /*transform: skew(-45deg);*/
+/*}*/
+
+/*!* Bootstrap overrides for color scheme. *!*/
+/*.navbar-default, .navbar-collapse {*/
+    /*color: #07889b;*/
+    /*border-color: #aaa;*/
+/*}*/
+
+/*#brand-link,*/
+/*.navbar-default .navbar-brand,*/
+/*.navbar-default .navbar-nav > li > a {*/
+    /*color: #07889b;*/
+/*}*/
+
+/*#brand-link:hover,*/
+/*#brand-link:active,*/
+/*.navbar-default .navbar-nav > .active > a,*/
+/*.navbar-default .navbar-nav > .active > a:hover,*/
+/*.navbar-default .navbar-nav > li > a:hover,*/
+/*.navbar-default .navbar-nav > li > a:active {*/
+    /*color: #ff6922;*/
+/*}*/
+
+/*.navbar-default .navbar-toggle {*/
+    /*border-color: #aaa;*/
+/*}*/
+
+/*hr {*/
+    /*border-top: 1px solid #07889b;*/
+/*}*/
+
+/*blockquote {*/
+    /*border-color: #07889b;*/
+/*}*/
+
+/*!* Link styling. *!*/
+/*a:link, a:visited {*/
+    /*color: black;*/
+/*}*/
+
+/*a:hover, a:active {*/
+    /*color: #ff6922;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.expand-collapse {*/
+    /*height: 1em;*/
+/*}*/
+
+/*.expandable {*/
+    /*cursor: zoom-in;*/
+/*}*/
+
+/*.collapsible {*/
+    /*cursor: zoom-out;*/
+/*}*/
+
+/*!* Menu bar formatting. *!*/
+/*.navbar-brand {*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+/*}*/
+
+/*#brand-subtitle {*/
+    /*font-size: 69%;*/
+/*}*/
+
+/*.navbar-nav {*/
+    /*font-size: 125%;*/
+/*}*/
+
+/*.nav-divider-left-md {*/
+    /*border-left: 1px solid #aaa;*/
+/*}*/
+
+/*.nav-divider-right-md {*/
+    /*border-right: 1px solid #aaa;*/
+/*}*/
+
+/*!* Menu bar overrides for mobile. *!*/
+/*@media screen and (max-width: 767px) {*/
+    /*.nav-divider-left-md {*/
+        /*border-left: inherit;*/
+    /*}*/
+
+    /*.nav-divider-right-md {*/
+        /*border-right: inherit;*/
+    /*}*/
+
+    /*.nav-divider-bottom-xs {*/
+        /*border-bottom: 1px solid #aaa;*/
+    /*}*/
+/*}*/
+
+/*!* Styling specific to the Welcome page. *!*/
+/*#welcome-page {*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*#welcome-page h3,*/
+/*#welcome-page p,*/
+/*#welcome-page > div > ul > li {*/
+    /*font-size: 250%;*/
+/*}*/
+
+/*#welcome-page ul > li > ul > li {*/
+    /*font-size: 75%;*/
+/*}*/
+
+/*#welcome-page img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+/*.fly-in {*/
+    /*-webkit-transition-duration: 1s;*/
+    /*transition-duration: 1s;*/
+/*}*/
+
+/*.fly-in-left.waiting {*/
+    /*transform: translateX(-105%);    !* Rounded up due to ul skew. *!*/
+/*}*/
+
+/*.fly-in-bottom.waiting {*/
+    /*transform: translateY(100vh);*/
+/*}*/
+
+/*!* Styling specific to the Developer page. *!*/
+/*#developer p, #developer li {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*#four-logos {*/
+    /*max-width: 90%;*/
+    /*margin-left: 5%;*/
+/*}*/
+
+/*.developer-image {*/
+    /*max-width: 40%;*/
+    /*margin-left: 5%;*/
+    /*margin-top: 3vh;*/
+/*}*/
+
+/*!* Styling specific to the Projects page. *!*/
+/*#projects h3 {*/
+    /*font-size: 200%;*/
+    /*font-weight: bold;*/
+    /*margin-bottom: 1em;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+/*#projects h3.align-right {*/
+    /*text-align: right;*/
+/*}*/
+
+/*#projects p, #projects > div > ul > li {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*#projects .btn-default {*/
+    /*border-color: #ff6922;*/
+    /*font-size: 125%;*/
+    /*width: 30%;*/
+    /*max-width: 100px;*/
+/*}*/
+
+/*#projects .btn-default.scroll-top {*/
+    /*border-color: black;*/
+    /*color: black;*/
+/*}*/
+
+/*#projects a:hover, a:active {*/
+    /*color: white;*/
+    /*background-color: #ff6922;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.paragraph-head {*/
+    /*font-size: 125%;*/
+/*}*/
+
+/*.project-img {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*!* Styling specific to the Skills page. *!*/
+/*#skills {*/
+    /*font-size: 125%;*/
+/*}*/
+
+/*#skills th, #skills td, #skills p {*/
+    /*padding-left: 2em;*/
+/*}*/
+
+/*.skills-image {*/
+    /*max-width: 40%;*/
+    /*margin-left: 5%;*/
+    /*margin-bottom: 3vh;*/
+/*}*/
+
+/*!* Styling specific to the Experience page. *!*/
+/*.experience-image {*/
+    /*max-width: 40%;*/
+    /*margin-left: 5%;*/
+/*}*/
+
+/*!* Styling specific to the Musician page. *!*/
+/*#musician h3, #musician p, #musician blockquote {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*#musician table {*/
+    /*width: 100%;*/
+/*}*/
+
+/*#musician tr {*/
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*.album-title {*/
+    /*font-size: 150%;*/
+    /*font-style: italic;*/
+/*}*/
+
+/*.album-cover > p {*/
+    /*height: 5em;*/
+/*}*/
+
+/*.album-cover div:nth-of-type(1) {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+/*}*/
+
+/*.album-cover img {*/
+    /*height: 250px;*/
+    /*width: auto;*/
+    /*max-width: 250px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.album-contents img {*/
+    /*height: 25px;*/
+    /*width: 25px;*/
+/*}*/
+
+/*.album-contents table,*/
+/*.album-contents th,*/
+/*.album-contents td {*/
+    /*border: 1px solid black;*/
+    /*padding: 0 0.2em;*/
+/*}*/
+
+/*!* Styling specific to the Actor page. *!*/
+/*#actor h3, #actor p, #actor blockquote {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*.role-img {*/
+    /*width: 100%;*/
+/*}*/
+
+/*.role {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.play-title {*/
+    /*font-style: italic;*/
+/*}*/
+
+/*!* Styling specific to the Foodie page. *!*/
+/*#foodie h3, #foodie h4, #foodie p, #foodie blockquote {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*#foodie h4 {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.foodie-img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
+
+/*!* Styling for Contact Me section. *!*/
+/*#contact-me p, #contact-me td {*/
+    /*font-size: 150%;*/
+/*}*/
+
+/*#contact-table img {*/
+    /*height: 30px;*/
+    /*margin-bottom: 8px;*/
+/*}*/
+
+/*#contact-table td {*/
+    /*font-size: 125%;*/
+    /*padding-left: 1em;*/
+/*}*/
+
+/*.contact-image {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*!* Other overrides for mobile. *!*/
+/*@media screen and (max-width: 767px) {*/
+    /*#welcome-page h3,*/
+    /*#welcome-page p,*/
+    /*#welcome-page > div > ul > li {*/
+        /*font-size: 200%;*/
+    /*}*/
+
+    /*#welcome-page ul > li > ul > li {*/
+        /*font-size: 75%;*/
+    /*}*/
+
+    /*#welcome-page br {*/
+        /*display: none;*/
+    /*}*/
+
+    /*#welcome-page img {*/
+        /*width: 50%;*/
+        /*height: auto;*/
+        /*margin-left: 25%;*/
+        /*border-radius: 10px;*/
+    /*}*/
+
+    /*!* Keep the ul skew from widening the page in mobile. *!*/
+    /*#developer ul.staggered-list {*/
+        /*width: 70%;*/
+    /*}*/
+
+    /*.developer-image, #four-logos {*/
+        /*margin-left: 0;*/
+    /*}*/
+
+    /*#skills th, #skills td, #skills p {*/
+        /*padding-left: 1em;*/
+    /*}*/
+
+    /*#experience h3 {*/
+        /*font-size: 125%;*/
+    /*}*/
+
+    /*#experience h4 {*/
+        /*font-size: 100%;*/
+    /*}*/
+
+/*}*/
