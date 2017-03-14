@@ -3,12 +3,13 @@
 **      0. General styling.
 **      1. Page top / intro.
 **      2. Profile section.
-**      3. Projects section.
-**      4. Musician section.
-**      5. Actor section.
-**      6. Foodie section.
-**      7. Contact section.
-**      8. Media queries.
+**      3. Skills section.
+**      4. Projects section.
+**      5. Musician section.
+**      6. Actor section.
+**      7. Foodie section.
+**      8. Contact section.
+**      9. Media queries.
 *******************************/
 
 /* Note that much of the styling comes from the 'grayscale' Bootstrap theme. */
@@ -21,12 +22,41 @@
     box-sizing: border-box;
 }
 
+.general-text {
+    background-color: white;
+    color: black;
+}
+
+/* Undo some of the 'grayscale' Bootstrap theme. */
+h1, h2, h3, h4, h5, h6 {
+    margin: inherit;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-top: 1px solid #07889b;
+}
+
+/* Some more general styling. */
+.strong {
+    font-weight: bold;
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.accent-color, .whats-possible {
+    color: #ff6922;
+}
+
+
 /*******************************
 **      1. Page top / intro.
 *******************************/
 
 #brain-image {
-    margin-top: 40px;
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -45,7 +75,7 @@ h1 {
     width: 100%;
     max-width: 200px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /*******************************
@@ -53,27 +83,39 @@ h1 {
 *******************************/
 
 /*******************************
-**      3. Projects section.
+**      3. Skills section.
+*******************************/
+
+#skills-graphics {
+    background-image: url("../images/background_code.png");
+
+}
+/*******************************
+**      4. Projects section.
+*******************************/
+
+.project-text {
+    background-color: white;
+    color: black;
+}
+/*******************************
+**      5. Musician section.
 *******************************/
 
 /*******************************
-**      4. Musician section.
+**      6. Actor section.
 *******************************/
 
 /*******************************
-**      5. Actor section.
+**      7. Foodie section.
 *******************************/
 
 /*******************************
-**      6. Foodie section.
+**      8. Contact section.
 *******************************/
 
 /*******************************
-**      7. Contact section.
-*******************************/
-
-/*******************************
-**      8. Media queries.
+**      9. Media queries.
 *******************************/
 
 @media screen and (max-width: 767px) {
