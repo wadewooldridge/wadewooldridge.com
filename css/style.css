@@ -42,7 +42,7 @@ hr {
     border-top: 1px solid #07889b;
 }
 
-p, td, th {
+p, li, td, th {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -195,11 +195,41 @@ a:focus {
 /*******************************
 **      4. Projects section.
 *******************************/
-
 .project-text {
     background-color: white;
     color: black;
+    text-align: left;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
+.project-text h4 {
+    margin: 2em 0 1em 0;
+}
+
+.project-text li {
+    font-size: 16px;
+}
+
+.project-links {
+    text-align: center;
+}
+
+#projects .row {
+    position: relative;
+}
+
+.project-graphics {
+    background-color: lightgray;
+    text-align: center;
+    padding: 0;
+}
+
+.project-img {
+    max-width: 100%;
+    position: relative;
+}
+
 /*******************************
 **      5. Musician section.
 *******************************/
