@@ -27,7 +27,11 @@
     color: black;
 }
 
-/* Undo some of the 'grayscale' Bootstrap theme. */
+/* Fix up some of the 'grayscale' Bootstrap theme to my color scheme. */
+.content-section {
+    padding-top: 50px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: inherit;
 }
@@ -36,6 +40,38 @@ hr {
     margin-top: 2px;
     margin-bottom: 2px;
     border-top: 1px solid #07889b;
+}
+
+p, td, th {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    margin: 1em 0;
+}
+
+.btn-default {
+    border: 1px solid #ff6922;
+    color: #ff6922;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #ff6922;
+    color: white;
+    background-color: #ff6922;
+}
+
+a {
+    color: #ff6922;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: white;
 }
 
 /* Some more general styling. */
@@ -51,6 +87,16 @@ hr {
     color: #ff6922;
 }
 
+/* Vertical center a block of content. */
+.vert-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
 
 /*******************************
 **      1. Page top / intro.
@@ -60,11 +106,6 @@ hr {
     width: 100%;
     max-width: 600px;
     height: auto;
-}
-
-h1 {
-    margin: inherit;
-    margin-top: 20px;
 }
 
 #intro-text {
@@ -82,14 +123,75 @@ h1 {
 **      2. Profile section.
 *******************************/
 
+#profile-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#profile-graphics {
+    background-color: #eee;
+    background-image: url("../images/faded_laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile-graphics h4 {
+    color: black;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+}
+
 /*******************************
 **      3. Skills section.
 *******************************/
 
-#skills-graphics {
-    background-image: url("../images/background_code.png");
-
+#skills-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
+#skills-text h4 {
+    margin: 2em 0 1em 0;
+}
+
+#skills-text table {
+    width: 100%;
+}
+
+#skills-graphics {
+    background-color: #eee;
+    background-image: url("../images/faded_code_sample.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skills-graphics i {
+    font-size: 55px;
+    color: black;
+}
+
+.skills-row {
+    height: 16%;
+}
+
+/* Skills in rows with odd counts are fine as they are. */
+.skills-triplet {
+    display: flex;
+    width: 100%;
+}
+
+/* Skills in rows with even counts need tweaking to line up with the odd rows. */
+.skills-doublet {
+    display: flex;
+    width: 68%;
+    margin-left: 16%;
+}
+
+.skill {
+    width: 100%;
+    text-align: center;
+}
+
 /*******************************
 **      4. Projects section.
 *******************************/
