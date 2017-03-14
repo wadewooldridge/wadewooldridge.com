@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="Web Developer Portfolio Page">
+    <meta name="author" content="Wade Wooldridge">
     <title>Wade Wooldridge</title>
 
     <!-- Bootstrap Core CSS -->
@@ -15,8 +14,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- Devicon Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <!-- Site CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +30,7 @@
     <![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -79,102 +82,185 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <img id="brain-image" src="images/brain.jpg">
-                    </div>
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="col-md-8" class="intro-text">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <img id="brain-image" src="images/brain.jpg">
+                </div>
+                <div class="col-md-10 col-md-offset-1" data-mh="intro-height">
+                    <div class="col-md-8" class="intro-text" data-mh="intro-height">
+                        <div class="vert-center">
                             <h1>Wade Wooldridge</h1>
                             <h3>Web Developer</h3>
                             <br>
                             <p>Coding lights up my brain.</p>
                         </div>
-                        <div class="col-md-3 hidden-xs hidden-sm">
-                            <img id="headshot-image" src="images/headshot_portrait.jpg">
-                        </div>
                     </div>
-                    <div class="col-md-8 col-md-offset-2">
-                        <a href="#profile" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div class="col-md-3 hidden-xs hidden-sm">
+                        <img id="headshot-image" src="images/headshot_portrait.jpg" data-mh="intro-height">
                     </div>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="#profile" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Profile Section -->
-    <section id="profile" class="container content-section">
-        <div class="row">
-            <div id="profile-graphics" class="col-xs-12 col-sm-6 text-center">
-                <h4>Check out my code:</h4>
-                <button>Github</button>
-                <h4>Check out my resume:</h4>
-                <a href="assets/Resume%20-%20Wade%20Wooldridge.pdf" target="_blank">Resume - Wade Wooldridge.pdf</a>
-                <button>Resume</button>
-            </div>
-            <div id="profile-text" class="col-xs-12 col-sm-6 general-text">
-                <h2>Profile</h2>
-                <hr>
-                <p>Having spent many years creating lower-level code such as device drivers and embedded firmware,
-                    I have reinvented myself as a Web Developer, and I am currently looking for the right position.</p>
-                <p>I view programming as any other art: creating something from nothing within a form. It is this
-                    creative energy that gives me the most satisfaction as a developer.</p>
-                <p>I also bring a variety of "soft" skills to any employer: I have excellent communications skills, whether it
-                    is presenting, writing, or proofreading. I have been a key data organizer in previous companies, creating
-                    and maintaining internal Wiki sites and document repositories.</p>
-                </ul>
+    <section id="profile" class="content-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="profile-graphics" class="col-xs-12 col-sm-6 text-center" data-mh="profile-height">
+                    <div class="vert-center">
+                        <h4>Check out my code:</h4>
+                        <button class="btn btn-default">
+                            <a href="https://github.com/wadewooldridge" target="_blank">Github</a>
+                        </button>
+                        <br><br><br>
+                        <h4>Check out my resume:</h4>
+                        <button class="btn btn-default">
+                            <a href="assets/Resume%20-%20Wade%20Wooldridge.pdf" target="_blank">Resume</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="profile-text" class="col-xs-12 col-sm-6 general-text" data-mh="profile-height">
+                    <h2>Profile</h2>
+                    <hr>
+                    <p>Having spent many years creating lower-level code such as device drivers and embedded firmware,
+                        I have reinvented myself as a Web Developer, and I am currently looking for the right position.</p>
+                    <p>I view programming as any other art: creating something from nothing within a form. It is this
+                        creative energy that gives me the most satisfaction as a developer.</p>
+                    <p>I also bring a variety of "soft" skills to any employer: I have excellent communications skills, whether it
+                        is presenting, writing, or proofreading. I have been a key data organizer in previous companies, creating
+                        and maintaining internal Wiki sites and document repositories.</p>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="container content-section">
-        <div class="row">
-            <div id="skills-graphics" class="col-xs-12 col-sm-6 col-sm-push-6">
-                <p>Skills graphics go here</p>
-            </div>
-            <div id="skills-text" class="col-xs-12 col-sm-6 col-sm-pull-6 general-text">
-                <h2>Skills</h2>
-                <hr>
-                <table class="table-striped">
-                    <tr>
-                        <th>Web Programming:</th>
-                        <td>HTML5, CSS3, JavaScript, jQuery, Bootstrap, PHP, MySQL</td>
-                    </tr>
-                    <tr>
-                        <th>Other Programming:</th>
-                        <td>C/C++, Python, Assembler</td>
-                    </tr>
-                    <tr>
-                        <th>Web Tools:</th>
-                        <td>JetBrains PHPStorm, phpMyAdmin</td>
-                    </tr>
-                    <tr>
-                        <th>Programming Tools:</th>
-                        <td>Perforce, SourceSafe, VTune, Finisar, WireShark</td>
-                    </tr>
-                    <tr>
-                        <th>Data Management:</th>
-                        <td>Confluence, MediaWiki, SharePoint, ClearQuest</td>
-                    </tr>
-                </table>
-                <h3>Soft Skills</h3>
-                <p><span class="strong">Customer support</span>: I have spent many years with direct customer interface, and I am
-                    comfortable meeting, collaborating, presenting to, and working with technical liaisons and management. </p>
-                <p><span class="strong">Communication</span>: I have excellent written and verbal communication skills, including
-                    technical writing, proofreading, and faciliting international conference calls.</p>
-                <p><span class="strong">Organization</span>: I have presided over internal Wiki projects at my previous two companies,
-                    and at Broadcom I designed and implemented the SharePoint document repository including various views
-                    using document metadata.</p>
+    <section id="skills" class="content-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="skills-graphics" class="col-xs-12 col-sm-6 col-sm-push-6" data-mh="skills-height">
+                    <div class="skills-row">
+                        <div class="skills-triplet vert-center">
+                            <div class="skill">
+                                <i class="devicon-html5-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-css3-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-javascript-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-doublet vert-center">
+                            <div class="skill">
+                                <i class="devicon-php-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-mysql-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-triplet vert-center">
+                            <div class="skill">
+                                <i class="devicon-bootstrap-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-jquery-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-angularjs-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-doublet vert-center">
+                            <div class="skill">
+                                <i class="devicon-nodejs-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-phpstorm-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-triplet vert-center">
+                            <div class="skill">
+                                <i class="devicon-gimp-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-github-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-confluence-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-doublet vert-center">
+                            <div class="skill">
+                                <i class="devicon-c-plain"></i>
+                            </div>
+                            <div class="skill">
+                                <i class="devicon-python-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills-text" class="col-xs-12 col-sm-6 col-sm-pull-6 general-text" data-mh="skills-height">
+                    <h2>Skills</h2>
+                    <hr>
+                    <h4>Technical Skills</h4>
+                    <table class="table-striped">
+                        <tr>
+                            <th>Web Languages:</th>
+                            <td>HTML5, CSS3, JavaScript, PHP, MySQL</td>
+                        </tr>
+                        <tr>
+                            <th>Web Libraries:</th>
+                            <td>jQuery, Bootstrap, Angular, Node.JS</td>
+                        </tr>
+                        <tr>
+                            <th>Web Tools:</th>
+                            <td>JetBrains PHPStorm, phpMyAdmin, GIMP</td>
+                        </tr>
+                        <tr>
+                            <th>Other Languages:</th>
+                            <td>C/C++, Python, Assembler</td>
+                        </tr>
+                        <tr>
+                            <th>Programming Tools:</th>
+                            <td>Perforce, GitHub, VTune, Finisar, WireShark</td>
+                        </tr>
+                        <tr>
+                            <th>Data Management:</th>
+                            <td>Confluence, MediaWiki, SharePoint, ClearQuest</td>
+                        </tr>
+                    </table>
+                    <h4>Soft Skills</h4>
+                    <p><span class="strong">Customer support</span>: I have spent many years with direct customer interface, and I am
+                        comfortable meeting, collaborating, presenting to, and working with technical liaisons and management. </p>
+                    <p><span class="strong">Communication</span>: I have excellent written and verbal communication skills, including
+                        technical writing, proofreading, and faciliting international conference calls.</p>
+                    <p><span class="strong">Organization</span>: I have presided over internal Wiki projects at my previous two companies,
+                        and at Broadcom I designed and implemented the SharePoint document repository including various views
+                        using document metadata.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="container content-section text-center">
+    <section id="projects" class="container-fluid content-section text-center">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
@@ -186,6 +272,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 project-text">
                 <h2>Project: DoubleDateOC</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>A database app for matching couples and shared activities, similar to how a dating site would do so.</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -216,6 +303,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text">
                 <h2>Project: Depp Man Walking</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>A "Concentration"-style card matching game.</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -243,6 +331,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 project-text">
                 <h2>Project: Kwantos</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>An "Are there more...?" game based on having the user guess the relative quantities of miscellaneous
                     words looked up on a variety of web APIs (e.g. "Are there more place names in the Unites States
@@ -277,6 +366,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text">
                 <h2>Project: Life</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>An implementation of Conway's game of Life in JavaScript and JQuery..</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -303,6 +393,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 project-text">
                 <h2>Project: EverHungry?</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>A mobile app to solve the problem of "...where should we go for dinner?"</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -332,6 +423,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text">
                 <h2>Project: Citation Tic-Tac-Toe</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>A Tic-Tac-Toe game with pop-up quizzing of supplied questions on proper citation notation.</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -359,6 +451,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 project-text">
                 <h2>Project: Calculator</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>A calculator app for basic arithmetic operations.</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -387,6 +480,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text">
                 <h2>Project: QLdirect</h2>
+                <hr>
                 <p><span class="paragraph-head">What's required:</span> </p>
                 <p>Software to differentiate QLogic Fibre Channel controllers.</p>
                 <p><span class="paragraph-head whats-possible">What's possible:</span> </p>
@@ -403,49 +497,47 @@
     </section>
 
     <!-- Musician Section -->
-    <section id="musician" class="container content-section text-center">
+    <section id="musician" class="container-fluid content-section text-center">
         <div class="musician-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Musician</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Musician</h2>
+                <hr>
+                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
             </div>
         </div>
     </section>
 
     <!-- Actor Section -->
-    <section id="actor" class="container content-section text-center">
+    <section id="actor" class="container-fluid content-section text-center">
         <div class="actor-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Actor</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Actor</h2>
+                <hr>
+                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
             </div>
         </div>
     </section>
 
     <!-- Foodie Section -->
-    <section id="foodie" class="container content-section text-center">
+    <section id="foodie" class="container-fluid content-section text-center">
         <div class="foodie-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Foodie</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Foodie</h2>
+                <hr>
+                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container-fluid content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Me</h2>
+                <hr>
                 <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
                 <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
@@ -464,12 +556,9 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
-
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="text-center">
             <p>Copyright &copy; 2017 Wade Wooldridge</p>
         </div>
     </footer>
@@ -483,11 +572,19 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+    <!-- jquery-match-height -->
+    <script src="vendor/jquery-match-height/jquery.matchHeight.js"></script>
+
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- Comment out Google Maps for now.
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    -->
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <!-- Site JavaScript -->
+    <script src="js/site.js"></script>
 
 </body>
 
