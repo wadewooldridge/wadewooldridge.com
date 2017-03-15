@@ -246,7 +246,8 @@ a:focus {
     background-size: cover;
 }
 
-#musician-details blockquote {
+#musician-details blockquote,
+#actor-text blockquote {
     color: #07889b;
     border-left: 5px solid #07889b;
     margin-top: 50px;
@@ -315,11 +316,34 @@ a:focus {
     padding-bottom: 2em;
 }
 
+#actor-text h4 {
+    color: black;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+}
+
+#actor-resume-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 #actor-graphics {
     background-color: #eee;
-    background-image: url("../images/faded_comedy_tragedy.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: black;
+}
+
+.role-img {
+    width: 100%;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.play-title {
+    font-style: italic;
 }
 
 /*******************************
