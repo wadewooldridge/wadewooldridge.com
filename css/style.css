@@ -246,8 +246,7 @@ a:focus {
     background-size: cover;
 }
 
-#musician-details blockquote,
-#actor-text blockquote {
+#musician-details blockquote {
     color: #07889b;
     border-left: 5px solid #07889b;
     margin-top: 50px;
@@ -322,6 +321,12 @@ a:focus {
     font-weight: 400;
 }
 
+#actor-text blockquote {
+    color: #07889b;
+    border-left: 5px solid #07889b;
+    margin-top: 50px;
+}
+
 #actor-resume-div {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -355,11 +360,40 @@ a:focus {
     padding-bottom: 2em;
 }
 
+#foodie-text blockquote {
+    color: #07889b;
+    border-left: 5px solid #07889b;
+    margin-top: 20px;
+}
+
+#foodie-text td {
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 #foodie-details {
+    color: black;
     background-color: #eee;
     background-image: url("../images/faded_food.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Start with three of the foodie galleries hidden. */
+#foodie-1,
+#foodie-2,
+#foodie-3 {
+    display: none;
+}
+
+.foodie-gallery h3,
+.foodie-gallery h4 {
+    margin-top: 20px;
+}
+
+.foodie-gallery img {
+    width: 100%;
 }
 
 /*******************************

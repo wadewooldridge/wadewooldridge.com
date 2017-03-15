@@ -51,4 +51,36 @@ $(document).ready(function() {
         hideAndShowAlbums();
     });
 
+    // Which foodie gallery is currently being shown.
+    var foodieSelected = 0;
+
+    // jQuery selectors for the foodie sections
+    var foodieSelectors = [
+        $('#foodie-0'),
+        $('#foodie-1'),
+        $('#foodie-2'),
+        $('#foodie-3')
+    ];
+
+    // Helper function to hide everything but the shown foodie gallery.
+    function hideAndShowFoodieGalleries() {
+        console.log('hideAndShowFoodieGalleries: ' + foodieSelected);
+        for (let i = 0; i < foodieSelectors.length; i++){
+            let selector = foodieSelectors[i];
+            if (i === foodieSelected) {
+                $(selector).show();
+            } else {
+                $(selector).hide();
+            }
+        }
+    }
+
+    // When the foodie radio button changes, hide/show the proper gallery.
+    $('input[type=radio][name=food-type]').on('change', function() {
+        let foodType = parseInt($(this).val());
+        console.log('onFoodTypeChange: ' + foodType);
+        foodieSelected = foodType;
+        hideAndShowFoodieGalleries();
+    });
+
 });
