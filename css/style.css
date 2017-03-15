@@ -400,6 +400,34 @@ a:focus {
 **      8. Contact section.
 *******************************/
 
+#contact-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#contact-graphics {
+    background-color: black;
+}
+
+#contact-table {
+    width: 100%;
+}
+
+#contact-table img {
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact-table td {
+    font-size: 125%;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.contact-image {
+    max-width: 100%;
+}
+
 /*******************************
 **      9. Media queries.
 *******************************/
