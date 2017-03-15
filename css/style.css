@@ -12,7 +12,7 @@
 **      9. Media queries.
 *******************************/
 
-/* Note that much of the styling comes from the 'grayscale' Bootstrap theme. */
+/* Note that much of the styling comes from the 'grayscale' B`ootstrap theme. */
 
 /*******************************
 **      0. General styling.
@@ -234,13 +234,49 @@ a:focus {
 **      5. Musician section.
 *******************************/
 
+#musician-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#musician-details {
+    background-color: #eee;
+    background-image: url("../images/faded_keyboard_mic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*******************************
 **      6. Actor section.
 *******************************/
 
+#actor-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#actor-graphics {
+    background-color: #eee;
+    background-image: url("../images/faded_comedy_tragedy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*******************************
 **      7. Foodie section.
 *******************************/
+
+#foodie-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#foodie-details {
+    background-color: #eee;
+    background-image: url("../images/faded_food.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*******************************
 **      8. Contact section.
