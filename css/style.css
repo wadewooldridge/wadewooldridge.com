@@ -106,14 +106,32 @@ button a {
 **      1. Page top / intro.
 *******************************/
 
+.intro .intro-body {
+    display: block;
+}
+
+.intro {
+    padding: 80px 0 20px 0;
+}
+
 #brain-image {
     width: 100%;
     max-width: 600px;
     height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #intro-text {
     text-align: right;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+#intro-graphics {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 #headshot-image {
@@ -439,6 +457,17 @@ button a {
 @media screen and (max-width: 767px) {
     #brain-image {
         margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #intro-text {
+        text-align: center;
+        padding-right: inherit;
+        margin-bottom: 0;
+    }
+
+    #intro-graphics {
+        margin-bottom: 0;
     }
 
     /* Disable vertical center on mobile, as the path-mh height is disabled. */
@@ -463,7 +492,24 @@ button a {
 
 }
 
-/* Special for iPhone 5 */
+/* Special for not-very-tall screens like laptops: use a smaller brain graphic. */
+@media screen and (min-width: 322px) and (max-height: 900px) {
+    #brain-image {
+        max-width: 400px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #intro-text {
+        margin-bottom: 0;
+    }
+
+    #intro-graphics {
+        margin-bottom: 0;
+    }
+}
+
+/* Special for iPhone 5 narrow width*/
 @media screen and (max-width: 321px) {
     /* Hide the word "Menu" next to the hamburger menu. */
     .hide-iphone5 {
