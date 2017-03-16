@@ -4,7 +4,7 @@
  */
 
 $(document).ready(function() {
-    console.log('Document ready.');
+    //console.log('Document ready.');
 
     // Which album is currently being shown.
     var albumSelected = 0;
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     // Helper function to hide everything but the shown album.
     function hideAndShowAlbums() {
-        console.log('hideAndShowAlbums: ' + albumSelected);
+        //console.log('hideAndShowAlbums: ' + albumSelected);
         for (let i = 0; i < albumSelectors.length; i++){
             let selector = albumSelectors[i];
             if (i === albumSelected) {
@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('.album-cover img').click(function(event) {
         let albumId = event.target.id;
         let albumClicked = parseInt(albumId.slice(-1));
-        console.log('click: ' + albumClicked);
+        //console.log('click: ' + albumClicked);
 
         if (albumSelected === albumClicked) {
             // Already selected this album; turn it off.
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     // Helper function to hide everything but the shown foodie gallery.
     function hideAndShowFoodieGalleries() {
-        console.log('hideAndShowFoodieGalleries: ' + foodieSelected);
+        //console.log('hideAndShowFoodieGalleries: ' + foodieSelected);
         for (let i = 0; i < foodieSelectors.length; i++){
             let selector = foodieSelectors[i];
             if (i === foodieSelected) {
@@ -78,7 +78,7 @@ $(document).ready(function() {
     // When the foodie radio button changes, hide/show the proper gallery.
     $('input[type=radio][name=food-type]').on('change', function() {
         let foodType = parseInt($(this).val());
-        console.log('onFoodTypeChange: ' + foodType);
+        //console.log('onFoodTypeChange: ' + foodType);
         foodieSelected = foodType;
         hideAndShowFoodieGalleries();
     });
