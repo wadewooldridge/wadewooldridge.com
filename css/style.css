@@ -137,6 +137,8 @@ button a {
     background-image: url("../images/faded_laptop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #profile-graphics h4 {
@@ -242,7 +244,9 @@ button a {
 }
 
 #musician-details {
-    background: #eee url("../images/faded_keyboard_mic.jpg") no-repeat;
+    background: #eee;
+    background-image: url("../images/faded_keyboard_mic.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -455,6 +459,24 @@ button a {
 
     #contact-table td:last-child {
         font-size: 100%;
+    }
+
+}
+
+/* Special for iPhone 5 */
+@media screen and (max-width: 321px) {
+    /* Hide the word "Menu" next to the hamburger menu. */
+    .hide-iphone5 {
+        display: none;
+    }
+
+    /* Shrink Contact text even more. */
+    #contact-table td:first-child {
+        font-size: 90%;
+    }
+
+    #contact-table td:last-child {
+        font-size: 90%;
     }
 
 }
