@@ -112,6 +112,17 @@
     <section id="profile" class="content-section">
         <div class="container-fluid">
             <div class="row">
+                <div id="profile-text" class="col-xs-12 col-sm-6 general-text" data-mh="profile-height">
+                    <h2>Profile</h2>
+                    <hr>
+                    <p>Having spent many years creating lower-level code such as device drivers and embedded firmware,
+                        I have reinvented myself as a Web Developer, and I am currently looking for the right position.</p>
+                    <p>I view programming as any other art: creating something from nothing within a form. It is this
+                        creative energy that gives me the most satisfaction as a developer.</p>
+                    <p>I also bring a variety of "soft" skills to any employer: I have excellent communications skills, whether it
+                        is presenting, writing, or proofreading. I have been a key data organizer in previous companies, creating
+                        and maintaining internal Wiki sites and document repositories.</p>
+                </div>
                 <div id="profile-graphics" class="col-xs-12 col-sm-6 text-center" data-mh="profile-height">
                     <div class="vert-center">
                         <h4>Check out my code:</h4>
@@ -126,17 +137,6 @@
                         </button>
                     </div>
                 </div>
-                <div id="profile-text" class="col-xs-12 col-sm-6 general-text" data-mh="profile-height">
-                    <h2>Profile</h2>
-                    <hr>
-                    <p>Having spent many years creating lower-level code such as device drivers and embedded firmware,
-                        I have reinvented myself as a Web Developer, and I am currently looking for the right position.</p>
-                    <p>I view programming as any other art: creating something from nothing within a form. It is this
-                        creative energy that gives me the most satisfaction as a developer.</p>
-                    <p>I also bring a variety of "soft" skills to any employer: I have excellent communications skills, whether it
-                        is presenting, writing, or proofreading. I have been a key data organizer in previous companies, creating
-                        and maintaining internal Wiki sites and document repositories.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -145,7 +145,46 @@
     <section id="skills" class="content-section">
         <div class="container-fluid">
             <div class="row">
-                <div id="skills-graphics" class="col-xs-12 col-sm-6 col-sm-push-6" data-mh="skills-height">
+                <div id="skills-text" class="col-xs-12 col-sm-6 col-sm-push-6 general-text" data-mh="skills-height">
+                    <h2>Skills</h2>
+                    <hr>
+                    <h4>Technical Skills</h4>
+                    <table class="table-striped">
+                        <tr>
+                            <th>Web Languages:</th>
+                            <td>HTML5, CSS3, JavaScript, PHP, MySQL</td>
+                        </tr>
+                        <tr>
+                            <th>Web Libraries:</th>
+                            <td>jQuery, Bootstrap, Angular, Node.JS</td>
+                        </tr>
+                        <tr>
+                            <th>Web Tools:</th>
+                            <td>JetBrains PHPStorm, phpMyAdmin, GIMP</td>
+                        </tr>
+                        <tr>
+                            <th>Other Languages:</th>
+                            <td>C/C++, Python, Assembler</td>
+                        </tr>
+                        <tr>
+                            <th>Programming Tools:</th>
+                            <td>Perforce, GitHub, VTune, Finisar, WireShark</td>
+                        </tr>
+                        <tr>
+                            <th>Data Management:</th>
+                            <td>Confluence, MediaWiki, SharePoint, ClearQuest</td>
+                        </tr>
+                    </table>
+                    <h4>Soft Skills</h4>
+                    <p><span class="strong">Customer support</span>: I have spent many years with direct customer interface, and I am
+                        comfortable meeting, collaborating, presenting to, and working with technical liaisons and management. </p>
+                    <p><span class="strong">Communication</span>: I have excellent written and verbal communication skills, including
+                        technical writing, proofreading, and faciliting international conference calls.</p>
+                    <p><span class="strong">Organization</span>: I have presided over internal Wiki projects at my previous two companies,
+                        and at Broadcom I designed and implemented the SharePoint document repository including various views
+                        using document metadata.</p>
+                </div>
+                <div id="skills-graphics" class="col-xs-12 col-sm-6 col-sm-pull-6" data-mh="skills-height">
                     <div class="skills-row">
                         <div class="skills-triplet vert-center">
                             <div class="skill">
@@ -216,45 +255,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="skills-text" class="col-xs-12 col-sm-6 col-sm-pull-6 general-text" data-mh="skills-height">
-                    <h2>Skills</h2>
-                    <hr>
-                    <h4>Technical Skills</h4>
-                    <table class="table-striped">
-                        <tr>
-                            <th>Web Languages:</th>
-                            <td>HTML5, CSS3, JavaScript, PHP, MySQL</td>
-                        </tr>
-                        <tr>
-                            <th>Web Libraries:</th>
-                            <td>jQuery, Bootstrap, Angular, Node.JS</td>
-                        </tr>
-                        <tr>
-                            <th>Web Tools:</th>
-                            <td>JetBrains PHPStorm, phpMyAdmin, GIMP</td>
-                        </tr>
-                        <tr>
-                            <th>Other Languages:</th>
-                            <td>C/C++, Python, Assembler</td>
-                        </tr>
-                        <tr>
-                            <th>Programming Tools:</th>
-                            <td>Perforce, GitHub, VTune, Finisar, WireShark</td>
-                        </tr>
-                        <tr>
-                            <th>Data Management:</th>
-                            <td>Confluence, MediaWiki, SharePoint, ClearQuest</td>
-                        </tr>
-                    </table>
-                    <h4>Soft Skills</h4>
-                    <p><span class="strong">Customer support</span>: I have spent many years with direct customer interface, and I am
-                        comfortable meeting, collaborating, presenting to, and working with technical liaisons and management. </p>
-                    <p><span class="strong">Communication</span>: I have excellent written and verbal communication skills, including
-                        technical writing, proofreading, and faciliting international conference calls.</p>
-                    <p><span class="strong">Organization</span>: I have presided over internal Wiki projects at my previous two companies,
-                        and at Broadcom I designed and implemented the SharePoint document repository including various views
-                        using document metadata.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -262,14 +262,6 @@
     <!-- Projects Section -->
     <section id="projects" class="container-fluid content-section text-center">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="ddoc-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/doubledateoc.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/doubledateoc_operation.gif">
-                </div>
-            </div>
             <div class="col-xs-12 col-sm-6 project-text" data-mh="ddoc-height">
                 <h2>Project: DoubleDateOC</h2>
                 <hr>
@@ -294,19 +286,19 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="ddoc-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/doubledateoc.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/doubledateoc_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-graphics" data-mh="dmw-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/depp_man_walking.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/dmw_operation.gif">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text" data-mh="dmw-height">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-text" data-mh="dmw-height">
                 <h2>Project: Depp Man Walking</h2>
                 <hr>
                 <h4>What's required:</h4>
@@ -327,18 +319,18 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-graphics" data-mh="dmw-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/depp_man_walking.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/dmw_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="kwantos-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/kwantos.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/kwantos_operation.gif">
-                </div>
-            </div>
             <div class="col-xs-12 col-sm-6 project-text" data-mh="kwantos-height">
                 <h2>Project: Kwantos</h2>
                 <hr>
@@ -367,19 +359,19 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="kwantos-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/kwantos.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/kwantos_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-graphics" data-mh="life-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/life.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/life_operation.gif">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text" data-mh="life-height">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-text" data-mh="life-height">
                 <h2>Project: Life</h2>
                 <hr>
                 <h4>What's required:</h4>
@@ -399,18 +391,18 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-graphics" data-mh="life-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/life.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/life_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="everhungry-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/ever_hungry.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/ever_hungry_operation.gif">
-                </div>
-            </div>
             <div class="col-xs-12 col-sm-6 project-text" data-mh="everhungry-height">
                 <h2>Project: EverHungry?</h2>
                 <hr>
@@ -434,19 +426,19 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="everhungry-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/ever_hungry.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/ever_hungry_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-graphics" data-mh="cttt-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/citation_tictactoe.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/citation_operation.gif">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text" data-mh="cttt-height">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-text" data-mh="cttt-height">
                 <h2>Project: Citation Tic-Tac-Toe</h2>
                 <hr>
                 <h4>What's required:</h4>
@@ -467,18 +459,18 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-graphics" data-mh="cttt-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/citation_tictactoe.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/citation_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="calculator-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/calculator.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/calculator_operation.gif">
-                </div>
-            </div>
             <div class="col-xs-12 col-sm-6 project-text" data-mh="calculator-height">
                 <h2>Project: Calculator</h2>
                 <hr>
@@ -501,19 +493,19 @@
                         <i class="fa fa-github"></i> GitHub</a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 project-graphics" data-mh="calculator-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/calculator.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/calculator_operation.gif">
+                </div>
+            </div>
         </div>
         <hr>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-graphics" data-mh="qldirect-height">
-                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
-                    <img class="project-img" src="images/qldirect.png">
-                </div>
-                <div class="hidden-xs col-sm-12">
-                    <img class="project-img" src="images/qldirect.png">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-text" data-mh="qldirect-height">
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 project-text" data-mh="qldirect-height">
                 <h2>Project: QLdirect</h2>
                 <hr>
                 <h4>What's required:</h4>
@@ -526,6 +518,14 @@
                     <li>Per-CPU IO queues to reduce cache thrashing.</li>
                 </ul>
             </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 project-graphics" data-mh="qldirect-height">
+                <div class="visible-xs-12 hidden-sm hidden-md hidden-lg">
+                    <img class="project-img" src="images/qldirect.png">
+                </div>
+                <div class="hidden-xs col-sm-12">
+                    <img class="project-img" src="images/qldirect.png">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -533,7 +533,41 @@
     <section id="musician" class="content-section">
         <div class="container-fluid">
             <div class="row">
-                <div id="musician-details" class="col-xs-12 col-sm-6 col-sm-push-6" data-mh="musician-height">
+                <div id="musician-text" class="col-xs-12 col-sm-6 general-text" data-mh="musician-height">
+                    <h2>Musician</h2>
+                    <hr>
+                    <p>Click on any album cover to open the playlist and hear selections from the album.</p>
+                    <div class="album-summary col-xs-12" data-mh="musician-height">
+                        <div class="col-xs-6 album-cover" data-mh="cover-1-height">
+                            <img id="album-cover-1" src="albums/ImitateTheSun/cdfrontcover.jpg">
+                        </div>
+                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-1-height">
+                            <h4><span class="album-title">Imitate The Sun</span> (2003)</h4>
+                            <p>A collection of inspiration music including six originals and six covers.</p>
+                        </div>
+                    </div>
+
+                    <div class="album-summary col-xs-12" data-mh="musician-height">
+                        <div class="col-xs-6 album-cover" data-mh="cover-2-height">
+                            <img id="album-cover-2" src="albums/Dreamscape/Dreamscape.jpg">
+                        </div>
+                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-2-height">
+                            <h4><span class="album-title">Dreamscape</span> (2016)</h4>
+                            <p>Twelve Broadway favorites, from shows that I have done or at least wish I had.</p>
+                        </div>
+                    </div>
+
+                    <div class="album-summary col-xs-12" data-mh="musician-height">
+                        <div class="col-xs-6 album-cover" data-mh="cover-3-height">
+                            <img id="album-cover-3" src="albums/BitsOfMe/BitsOfMe.jpg">
+                        </div>
+                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-3-height">
+                            <h4><span class="album-title">Bits Of Me</span> (2016)</h4>
+                            <p>A collection of ten songs that are personal to me, including five originals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="musician-details" class="col-xs-12 col-sm-6" data-mh="musician-height">
                     <div id="album-0">
                         <blockquote>"Musicians want to be the loud voice for so many quiet hearts."
                             <br>
@@ -1172,40 +1206,6 @@
                     </div>
 
                 </div>
-                <div id="musician-text" class="col-xs-12 col-sm-6 col-sm-pull-6 general-text" data-mh="musician-height">
-                    <h2>Musician</h2>
-                    <hr>
-                    <p>Click on any album cover to open the playlist and hear selections from the album.</p>
-                    <div class="album-summary col-xs-12" data-mh="musician-height">
-                        <div class="col-xs-6 album-cover" data-mh="cover-1-height">
-                            <img id="album-cover-1" src="albums/ImitateTheSun/cdfrontcover.jpg">
-                        </div>
-                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-1-height">
-                            <h4><span class="album-title">Imitate The Sun</span> (2003)</h4>
-                            <p>A collection of inspiration music including six originals and six covers.</p>
-                        </div>
-                    </div>
-
-                    <div class="album-summary col-xs-12" data-mh="musician-height">
-                        <div class="col-xs-6 album-cover" data-mh="cover-2-height">
-                            <img id="album-cover-2" src="albums/Dreamscape/Dreamscape.jpg">
-                        </div>
-                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-2-height">
-                            <h4><span class="album-title">Dreamscape</span> (2016)</h4>
-                            <p>Twelve Broadway favorites, from shows that I have done or at least wish I had.</p>
-                        </div>
-                    </div>
-
-                    <div class="album-summary col-xs-12" data-mh="musician-height">
-                        <div class="col-xs-6 album-cover" data-mh="cover-3-height">
-                            <img id="album-cover-3" src="albums/BitsOfMe/BitsOfMe.jpg">
-                        </div>
-                        <div class="col-xs-6 album-notes vert-center" data-mh="cover-3-height">
-                            <h4><span class="album-title">Bits Of Me</span> (2016)</h4>
-                            <p>A collection of ten songs that are personal to me, including five originals.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1214,7 +1214,36 @@
     <section id="actor" class="content-section">
         <div class="container-fluid">
             <div class="row">
-                <div id="actor-graphics" class="col-xs-12 col-sm-6" data-mh="actor-height">
+                <div id="actor-text" class="col-xs-12 col-sm-6 col-sm-push-6 general-text" data-mh="actor-height">
+                    <h2>Actor</h2>
+                    <hr>
+                    <p>I have experienced no greater sense of team camaraderie than that of actors coming together with
+                        a director and a script for the first time, and creating a unique interpretation of a work.
+                        There might be a little friendly competition during the auditions, but once the cast is set,
+                        every person there works to give every other actor the support they need to be their best, for
+                        the finished product is only as good as the emsemble.</p>
+                    <p>Of course this makes me comfortable presenting in front of a group in other environments, but
+                        it has also given me the gift of compassion: there is no better way to walk a mile in someone
+                        else's shoes than to have to be them, find their motivations, and work through their struggles.
+                        Playing a character gives me the chance to see the world through another's eyes.</p>
+                    <hr>
+                    <div id="actor-resume-div" class="text-center">
+                        <h4>See my full acting resume:</h4>
+                        <button class="btn btn-default">
+                            <a href="http://charmedlifecreations.com/resumewade.html" target="_blank">
+                                <i class="fa fa-external-link"></i> Acting Resume</a>
+                        </button>
+                    </div>
+                    <hr>
+                    <blockquote>"Actors in any capacity, artists of any stripe, are inspired by their curiosity, by their desire to
+                        explore all quarters of life, in light and in dark, and reflect what they find in their work.
+                        Artists instinctively want to reflect humanity, their own and each other's, in all its intermittent
+                        virtue and vitality, frailty and fallibility."
+                        <br>
+                        &mdash; Tom Hiddleston
+                    </blockquote>
+                </div>
+                <div id="actor-graphics" class="col-xs-12 col-sm-6 col-sm-pull-6" data-mh="actor-height">
                     <div class="col-xs-12 role-div">
                         <figure>
                             <img class="role-img" src="images/Spamalot01.jpg">
@@ -1260,35 +1289,6 @@
                         </figure>
                     </div>
                 </div>
-                <div id="actor-text" class="col-xs-12 col-sm-6 general-text" data-mh="actor-height">
-                    <h2>Actor</h2>
-                    <hr>
-                    <p>I have experienced no greater sense of team camaraderie than that of actors coming together with
-                        a director and a script for the first time, and creating a unique interpretation of a work.
-                        There might be a little friendly competition during the auditions, but once the cast is set,
-                        every person there works to give every other actor the support they need to be their best, for
-                        the finished product is only as good as the emsemble.</p>
-                    <p>Of course this makes me comfortable presenting in front of a group in other environments, but
-                        it has also given me the gift of compassion: there is no better way to walk a mile in someone
-                        else's shoes than to have to be them, find their motivations, and work through their struggles.
-                        Playing a character gives me the chance to see the world through another's eyes.</p>
-                    <hr>
-                    <div id="actor-resume-div" class="text-center">
-                        <h4>See my full acting resume:</h4>
-                        <button class="btn btn-default">
-                            <a href="http://charmedlifecreations.com/resumewade.html" target="_blank">
-                                <i class="fa fa-external-link"></i> Acting Resume</a>
-                        </button>
-                    </div>
-                    <hr>
-                    <blockquote>"Actors in any capacity, artists of any stripe, are inspired by their curiosity, by their desire to
-                        explore all quarters of life, in light and in dark, and reflect what they find in their work.
-                        Artists instinctively want to reflect humanity, their own and each other's, in all its intermittent
-                        virtue and vitality, frailty and fallibility."
-                        <br>
-                        &mdash; Tom Hiddleston
-                    </blockquote>
-                </div>
             </div>
         </div>
     </section>
@@ -1297,7 +1297,61 @@
     <section id="foodie" class="content-section">
         <div class="container-fluid">
             <div class="row">
-                <div id="foodie-details" class="col-xs-12 col-sm-6 col-sm-push-6" data-mh="foodie-height">
+                <div id="foodie-text" class="col-xs-12 col-sm-6 general-text" data-mh="foodie-height">
+                    <h2>Foodie</h2>
+                    <hr>
+                    <p>To me, food is one of the great sensual experiences in the world. Whether it is traveling and
+                        seeing new places, or sharing special times with friends and family, it is always enhanced by
+                        sharing good food and wine.</p>
+                    <p>Here are some of our favorite food experiences that you might want to try:</p>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="food-type" value="0" checked>
+                                </td>
+                                <td>
+                                    <span class="strong">SuperMeals</span><br>
+                                    Restaurants that have &mdash; or should have &mdash; Michelin stars.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="food-type" value="1">
+                                </td>
+                                <td>
+                                    <span class="strong">Fine Dining</span><br>
+                                    Favorite fine dining in the Orange County area.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="food-type" value="2">
+                                </td>
+                                <td>
+                                    <span class="strong">Casual Dining</span><br>
+                                    Food doesn't have to be expensive to be good.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="food-type" value="3">
+                                </td>
+                                <td>
+                                    <span class="strong">Other Food Fun</span><br>
+                                    Cooking parties and food tours.
+                                </td>
+                            </tr>
+                        </table>
+                         <br>
+                    </form>
+                    <hr>
+                    <blockquote>"One cannot think well, love well, sleep well, if one has not dined well."
+                        <br>
+                        &mdash; Virginia Woolf, <cite>A Room of One's Own</cite>
+                    </blockquote>
+                </div>
+                <div id="foodie-details" class="col-xs-12 col-sm-6" data-mh="foodie-height">
                     <div id="foodie-0" class="col-xs-12 foodie-gallery">
                         <h3>SuperMeals</h3>
                         <div class="col-xs-6">
@@ -1405,60 +1459,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="foodie-text" class="col-xs-12 col-sm-6 col-sm-pull-6 general-text" data-mh="foodie-height">
-                    <h2>Foodie</h2>
-                    <hr>
-                    <p>To me, food is one of the great sensual experiences in the world. Whether it is traveling and
-                        seeing new places, or sharing special times with friends and family, it is always enhanced by
-                        sharing good food and wine.</p>
-                    <p>Here are some of our favorite food experiences that you might want to try:</p>
-                    <form>
-                        <table>
-                            <tr>
-                                <td>
-                                    <input type="radio" name="food-type" value="0" checked>
-                                </td>
-                                <td>
-                                    <span class="strong">SuperMeals</span><br>
-                                    Restaurants that have &mdash; or should have &mdash; Michelin stars.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="radio" name="food-type" value="1">
-                                </td>
-                                <td>
-                                    <span class="strong">Fine Dining</span><br>
-                                    Favorite fine dining in the Orange County area.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="radio" name="food-type" value="2">
-                                </td>
-                                <td>
-                                    <span class="strong">Casual Dining</span><br>
-                                    Food doesn't have to be expensive to be good.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="radio" name="food-type" value="3">
-                                </td>
-                                <td>
-                                    <span class="strong">Other Food Fun</span><br>
-                                    Cooking parties and food tours.
-                                </td>
-                            </tr>
-                        </table>
-                         <br>
-                    </form>
-                    <hr>
-                    <blockquote>"One cannot think well, love well, sleep well, if one has not dined well."
-                        <br>
-                        &mdash; Virginia Woolf, <cite>A Room of One's Own</cite>
-                    </blockquote>
-                </div>
             </div>
         </div>
     </section>
@@ -1467,7 +1467,16 @@
     <section id="contact" class="content-section">
         <div class="container-fluid">
             <div class="row">
-                <div id="contact-graphics" class="col-xs-12 col-sm-6" data-mh="contacts-height">
+                <div id="contact-text" class="col-xs-12 col-sm-6 col-sm-push-6 general-text" data-mh="contacts-height">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    <p>I am currently searching for the right position that will leverage my existing programming
+                        skills, and still allow me to grow as a web developer.</p>
+                    <p>I am currently limiting my search to Orange County (where I currently live),
+                        and Northern San Diego County (where I am thinking of relocating).</p>
+                    <p>References available upon request.</p>
+                </div>
+                <div id="contact-graphics" class="col-xs-12 col-sm-6 col-sm-pull-6" data-mh="contacts-height">
                     <div class="vert-center">
                         <table id="contact-table">
                             <tr>
@@ -1488,15 +1497,6 @@
                             </tr>
                         </table>
                     </div>
-                </div>
-                <div id="contact-text" class="col-xs-12 col-sm-6 general-text" data-mh="contacts-height">
-                    <h2>Contact Me</h2>
-                    <hr>
-                    <p>I am currently searching for the right position that will leverage my existing programming
-                        skills, and still allow me to grow as a web developer.</p>
-                    <p>I am currently limiting my search to Orange County (where I currently live),
-                        and Northern San Diego County (where I am thinking of relocating).</p>
-                    <p>References available upon request.</p>
                 </div>
             </div>
         </div>
