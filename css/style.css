@@ -163,9 +163,7 @@ button a {
 }
 
 #skills-graphics {
-    background-color: #eee;
-    background-image: url("../images/faded_code_sample.jpg");
-    background-repeat: no-repeat;
+    background: #eee url("../images/faded_code_sample.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -244,9 +242,7 @@ button a {
 }
 
 #musician-details {
-    background-color: #eee;
-    background-image: url("../images/faded_keyboard_mic.jpg");
-    background-repeat: no-repeat;
+    background: #eee url("../images/faded_keyboard_mic.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -287,8 +283,7 @@ button a {
 }
 
 .album-contents {
-    background-color: #eee;
-    background-image: none;
+    background: #eee none;
     color: black;
     overflow: hidden;
 }
@@ -344,6 +339,7 @@ button a {
 }
 
 #actor-graphics figure {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -382,9 +378,7 @@ button a {
 
 #foodie-details {
     color: black;
-    background-color: #eee;
-    background-image: url("../images/faded_food.png");
-    background-repeat: no-repeat;
+    background: #eee url("../images/faded_food.png") no-repeat;
     background-size: cover;
 }
 
@@ -421,11 +415,6 @@ button a {
     width: 100%;
 }
 
-#contact-table img {
-    height: 30px;
-    margin-bottom: 8px;
-}
-
 #contact-table td:first-child {
     font-size: 125%;
     padding-right: 1em;
@@ -439,10 +428,6 @@ button a {
     text-align: center;
 }
 
-.contact-image {
-    max-width: 100%;
-}
-
 /*******************************
 **      9. Media queries.
 *******************************/
@@ -451,4 +436,25 @@ button a {
     #brain-image {
         margin-top: 0;
     }
+
+    /* Disable vertical center on mobile, as the path-mh height is disabled. */
+    .vert-center {
+        position: inherit;
+        top: inherit;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    /* Set contact table to fit better in mobile. */
+    #contact-table td:first-child {
+        font-size: 100%;
+    }
+
+    #contact-table td:last-child {
+        font-size: 100%;
+    }
+
 }
