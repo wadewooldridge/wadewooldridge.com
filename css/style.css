@@ -129,6 +129,7 @@ button a {
 }
 
 #intro-graphics {
+    height: 300px;
     text-align: left;
     padding-left: 10px;
     margin-bottom: 20px;
