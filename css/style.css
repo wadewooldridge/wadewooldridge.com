@@ -120,6 +120,12 @@ button a {
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    -webkit-transition: 2s filter linear;
+    -moz-transition: 2s filter linear;
+    -ms-transition: 2s filter linear;
+    -o-transition: 2s filter linear;
+    transition: 2s filter linear;
 }
 
 #intro-text {
@@ -140,6 +146,30 @@ button a {
     max-width: 200px;
     height: auto;
     border-radius: 8px;
+}
+
+#brain-image.shift0 {
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+    -ms-filter: hue-rotate(0deg);
+    -o-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+}
+
+#brain-image.shift1 {
+    -webkit-filter: hue-rotate(30deg);
+    -moz-filter: hue-rotate(30deg);
+    -ms-filter: hue-rotate(30deg);
+    -o-filter: hue-rotate(30deg);
+    filter: hue-rotate(30deg);
+}
+
+#brain-image.shift2 {
+    -webkit-filter: hue-rotate(-30deg);
+    -moz-filter: hue-rotate(-30deg);
+    -ms-filter: hue-rotate(-30deg);
+    -o-filter: hue-rotate(-30deg);
+    filter: hue-rotate(-30deg);
 }
 
 /*******************************
